@@ -12,9 +12,19 @@ nav{
 	z-index: 1000;
 	position: absolute;
 	}
+
+.soc-links{
+	font-weight: 500;
+	border:2px solid black;
+	float: right;
+	font-size: 25px;
+	color: red;
+	display: inline-block;
+}
 #tabs{
-	border:0px solid black;
-	margin-left: 49%;
+	display: inline-block;
+	border:2px solid black;
+	margin-left: 48%;
 	transform: translateX(-50%);
 }
 #tabs > a{
