@@ -14,18 +14,22 @@ nav{
 	}
 
 .soc-links{
-
+	position: absolute;
 	font-weight: 500;
-	border:2px solid black;
-	float: right;
-	font-size: 25px;
-	color: red;
+	border:0px solid black;
+	left: 90%;
+	transform: translateY(-80%);
+	font-size: 2.5rem;
+	color:#404040;
 	display: inline-block;
+}
+.soc-links>i:hover{
+	color: red;
 }
 #tabs{
 	d
 	display: inline-block;
-	border:2px solid black;
+	border:0px solid black;
 	margin-left: 48%;
 	transform: translateX(-50%);
 }
@@ -101,6 +105,7 @@ h2{
 	margin-top:5rem;
 	border:0px groove black;
 	padding: 5rem;
+	border:0px solid black;
 
 }
 
@@ -126,9 +131,12 @@ h3{
 	opacity: 0.5;
 }
 
-
-
+li>img:hover, li>a>img:hover{
+	animation: grow 0.5s ease-out;
+	animation-fill-mode: forwards;
+}
 .grow{
+	z-index:1000;
 	animation-fill-mode: forwards;
 	animation: shrinks 0.3s ease-; 
 }
@@ -141,10 +149,13 @@ h3{
 	100%{transform: scale(1);}
 }
 @keyframes grow{
-	100%{	
-			transform: scale(2);
-			z-index: 100;
-			background-color: rgba(255,255,255,0.5);
+	0%{
+		position: absolute;
+		width:200px;
+	}
+	100%{	position: absolute;
+			width: 500px;
+			z-index: 1000 !important;
 
 		}
 }
@@ -153,4 +164,18 @@ h3{
 .slider{
 	width: 90%;
 	margin-left: 5%;
+}
+
+
+
+/*---------------------------------------------ALUMNI PAGE------------------------------------------*/
+.people{
+	width: 20%;
+	display: inline-block;
+	padding:2%;
+	margin: 2% 0 0 0;
+	border-right:1px solid black;
+}
+.people>img{
+	width: 100%;
 }

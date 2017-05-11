@@ -78,7 +78,7 @@ html[xmlns] .flexslider .slides {
   transition: all 1s ease;
 }
 .loading .flex-viewport {
-  max-height: 300px;
+  height: 300px;
 }
 .carousel li {
   margin-right: 5px;
@@ -108,7 +108,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav a:before {
   font-size: 50px;
-  z-index: 1000;
+  z-index: 10;
   font-weight: 900;
   transform: translateY(-13px);
   color: red !important;
