@@ -135,6 +135,13 @@ li>img:hover, li>a>img:hover{
 	animation: grow 0.5s ease-out;
 	animation-fill-mode: forwards;
 }
+
+.people:hover{
+	
+	animation: grown 0.3s ease-out;
+	animation-fill-mode: forwards;
+}
+.
 .grow{
 	z-index:1000;
 	animation-fill-mode: forwards;
@@ -147,6 +154,11 @@ li>img:hover, li>a>img:hover{
 @keyframes shrinks{
 	0%{transform: scale(2);}
 	100%{transform: scale(1);}
+}
+@keyframes grown{
+	100%{transform: scale(1.5);
+		border-right: 0px;
+	}
 }
 @keyframes grow{
 	0%{
@@ -175,7 +187,10 @@ li>img:hover, li>a>img:hover{
 	padding:2%;
 	margin: 2% 0 0 0;
 	border-right:1px solid black;
+	
 }
 .people>img{
 	width: 100%;
+	
+	padding-right: 2%;
 }
