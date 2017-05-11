@@ -14,6 +14,7 @@ nav{
 	}
 
 .soc-links{
+
 	font-weight: 500;
 	border:2px solid black;
 	float: right;
@@ -22,6 +23,7 @@ nav{
 	display: inline-block;
 }
 #tabs{
+	d
 	display: inline-block;
 	border:2px solid black;
 	margin-left: 48%;
@@ -114,7 +116,14 @@ h3{
 .subsheader{
 	display: block;
 	border:0px solid black;
-	margin-left: 10rem;
+	margin-left: 8rem;
+	font-family: 'Dosis', sans-serif;
+	font-size: 4rem;
+    background: -webkit-linear-gradient(#e00, #000);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+	letter-spacing: 5px;
+	opacity: 0.5;
 }
 
 
