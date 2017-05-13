@@ -186,13 +186,10 @@ li>img:hover, li>a>img:hover{
 	display: inline-block;
 	padding:2%;
 	margin: 2% 0 0 0;
-	border-right:1px solid black;
+	border-right:0px solid black;
 	
 }
 .people>img{
 	width: 100%;
-	
 	padding-right: 2%;
 }
-
-/*--------gallery------------*/
