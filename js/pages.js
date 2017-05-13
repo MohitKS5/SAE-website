@@ -1,12 +1,10 @@
  
 var grow_img= function grow_img(argument){
-    console.log(argument);
-    $(argument).addClass("grows");
-    $(argument).parent().height(500);
+    $(argument).parent().height(500).width(5000);
 };
 var shrink_img= function shrink_img(argument) {
-   $(argument).addClass("grows");
     $(argument).parent().height(200);
+    $(argument).children().addClass("shrunk");
 };
 
    
