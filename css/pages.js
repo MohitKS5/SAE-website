@@ -1,3 +1,0 @@
-function grow() {
-	alert("working");
-}

@@ -1,9 +1,12 @@
  
-var grows= function grows(){
-	};
-
-var shrink= function shrink(argument) {
-	$(argument).stop().addClass("shrink");
+var grow_img= function grow_img(argument){
+    console.log(argument);
+    $(argument).addClass("grows");
+    $(argument).parent().height(500);
+};
+var shrink_img= function shrink_img(argument) {
+   $(argument).addClass("grows");
+    $(argument).parent().height(200);
 };
 
    
