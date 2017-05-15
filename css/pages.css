@@ -157,7 +157,11 @@ li>img:hover, li>a>img:hover{
 			width: 500px;
 		}
 }
-
+.footer{
+	background-color:black;
+	display: block;
+	padding: 2%;
+}
 /*----------flex slider-----------------*/
 .slider{
 	width: 90%;
@@ -165,7 +169,48 @@ li>img:hover, li>a>img:hover{
 }
 
 
+/*----------------forms----------------------*/
+.my_form{
+	display: inline-block;
+	padding: 0% 0 5% 5%;
+	border-left: 3px groove white;
+	width: 30%;
+	margin-left: 30%;
+	border:10px solid black;
+	position: absolute;
+}
+.my_form>input{
+	text-align: center;
+	background-color: white;
+	border-radius: 5px;
+	margin:1% 1% 1% 1%;
+	width: 40%;
+}
+.my_form>input::placeholder{
+	color: red;
+	opacity: 0.7;
+}
+.my_form>.submit_button{
+	width: 20%;
+	height:30px;
+	margin:4% 0 0 30%;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+	font-weight: 900;
+}
+.my_form>.submit_button:hover{
+	background-color: #0f0;
+	font-size: 12px;
+	color: #666;
+}
+#email, #message{
+	width: 82.5%;
+}
 
+/*---------------------------------------------ALUMNI PAGE------------------------------------------*/
 /*---------------------------------------------ALUMNI PAGE------------------------------------------*/
 .people{
 	width: 20%;
@@ -179,3 +224,24 @@ li>img:hover, li>a>img:hover{
 	width: 100%;
 	padding-right: 2%;
 }
+#map{
+	display: inline-block;
+	width: 500px;
+	height: 300px;
+}
+.about-us{
+	display: inline-block;
+	width: 30%;
+	height:200px;
+	border:10px solid black;
+	margin-top: 0px;
+	position: absolute;
+	padding:2%; 
+	color: white;
+	text-align: center;
+}
+
+.photos{
+
+}
+
