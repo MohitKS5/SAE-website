@@ -8,7 +8,7 @@ body{
 
 /*-------------nav -------------------*/
 nav{
-	margin-top: 5%;
+	margin-top: 50%;
 	z-index: 1000;
 	position: absolute;
 	}
@@ -18,29 +18,39 @@ nav{
 	font-weight: 500;
 	border:0px solid black;
 	left: 90%;
-	transform: translateY(-80%);
-	font-size: 2.5rem;
-	color:#404040;
-	display: inline-block;
+	font-size: 1.5rem;
+	color:#333;
+	display: none;
+	transform: translate(-40%,-120%);
 }
 .soc-links>i:hover{
 	color: red;
 }
 #tabs{
-	d
+	background-color: #000;
 	display: inline-block;
 	border:0px solid black;
-	margin-left: 48%;
-	transform: translateX(-50%);
+	width: 100vw;
+	height:50px;
+	padding: 35px;
 }
 #tabs > a{
 	padding-left: 2rem;
 	font-weight: 400;
 	text-transform: uppercase;
 	border-right: 1px solid #f2f2f2;
-	font-size: 1.2rem;
-	color: #404040;
+	font-size: 1rem;
+	color: #fff;
 	letter-spacing: 3px;
+}
+#tabsA{
+
+}
+#tabsA>a{
+
+}
+#home{
+	margin-left: 10%;
 }
 #tabs > a:hover{
 	color:red;

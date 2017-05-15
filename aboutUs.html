@@ -10,6 +10,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="icon" href="logo.ico" type="image/x-icon" />
         <!-- Place favicon.ico in the root directory -->
+          <link rel="stylesheet" type="text/css" href="css/pages.css">
         <link rel="stylesheet" href="css/csshome/bootstrap.min.css">
         <link rel="stylesheet" href="css/csshome/reset.css">
         <link rel="stylesheet" href="css/csshome/normalize.css">
@@ -17,6 +18,7 @@
         <link rel="stylesheet" href="css/csshome/Font_Families.css">
         <link rel="stylesheet" href="css/csshome/sponsors.css">                 <!--navbar and timeline--> 
         <link rel="stylesheet" href="css/csshome/timeline_events.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
         <script src="js/jshome/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body ng-controller="aboutDetails">
@@ -37,77 +39,29 @@
   		</section>
 
   		<div class="cd-secondary-nav">
-  			<a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a>
-        <!-- button visible on small devices -->
   			<nav>
-  				<ul>
-  					<li>
-  						<a href="#cd-placeholder-0">
-  							<b>About</b>
-  							<span class="font-icon font-icon-file-text"></span><!-- icon -->
-  						</a>
-  					</li>
-  					<li>
-  						<a href="#cd-placeholder-1">
-  							<b>SAE</b>
-  							<span class="font-icon font-icon-shield"></span><!-- icon -->
-  						</a>
-  					</li>
-  					<li>
-  						<a href="#cd-placeholder-2">
-  							<b>FSAE</b>
-  							<span class="font-icon font-icon-trophy"></span><!-- icon -->
-  						</a>
-  					</li>
-  					<li>
-  						<a href="#cd-placeholder-3">
-  							<b>Baja</b>
-  							<span class="font-icon font-icon-trophy"></span><!-- icon -->
-  						</a>
-  					</li>
-            <li>
-              <a href="#cd-placeholder-5">
-                <b>Effi-Cycle</b>
-                <span class="font-icon font-icon-trophy"></span><!-- icon -->
-              </a>
-            </li>
-
-        <!--     <li>
-              <a href="Team.html">
-                <b>Our Team</b>
-                <span class="font-icon font-icon-trophy"></span>
-              </a>
-            </li> -->
-            <li>
-              <a href="#cd-placeholder-6">
-                <b>Alumni</b>
-                <span class="font-icon font-icon-trophy"></span><!-- icon -->
-              </a>
-            </li>
-            <li>
-              <a href="#cd-placeholder-7">
-                <b>Cars</b>
-                <span class="font-icon font-icon-trophy"></span><!-- icon -->
-              </a>
-            </li>
-            <li>
-              <a href="#cd-placeholder-8">
-                <b>Goals</b>
-                <span class="font-icon font-icon-trophy"></span><!-- icon -->
-              </a>
-            </li>
-
-
-
-  					<li>
-  						<a href="#cd-placeholder-4">
-  							<b>Timeline</b>
-  							<span class="font-icon font-icon-equalizer2"></span><!-- icon -->
-  						</a>
-  					</li>
-  				</ul>
-  			</nav>
-  		</div>
+  <div class="header_theme">
+    <div style= "margin-left: 5%;position: absolute;">
+      <!--img src="images/sae-logo.jpg" alt=""><span class="heavy">SAE</span-->
+    </div>
+      <div id="tabs">
+        <a href="" id="home">Home</a>
+        <a href="" data-id="tab-about">About</a>
+        <a href="">sponsors</a>
+        <a href="" data-id="tab-members" class="">members</a>
+        <a href="" data-id="tab-alumni">alumni</a>
+        <a href="">gallery</a>
+        <a href="">contact us</a>     
+      </div>
+    <div class="soc-links">
+      <i class="fa fa-facebook-official"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-google-plus"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>  
+  </div>
+  </nav>
+  </div>
   		<main class="cd-main-content" style="background:white;">
   			<section id="cd-placeholder-0" class="cd-section cd-container">
   				<h2>About Us</h2>
@@ -254,7 +208,6 @@ The design goals for this car were decreasing car’s weight by 25% - 60kg (from
       	</section>
   		</main>
 
-      <script src="js/jshome/common.js"></script>
       <script src="js/jshome/vendor/jquery-1.11.2.min.js"></script>
       <script src="js/jshome/angular.min.js"></script>
       <script src="js/jshome/angular-sanitize.js"></script>
@@ -263,6 +216,73 @@ The design goals for this car were decreasing car’s weight by 25% - 60kg (from
       <script src="js/jshome/sponsors.js"></script>
       <script src="js/jshome/about.js"></script>
       <script src="js/jshome/bootstrap.min.js"></script>
+
+<div class="logo2">
+  <marquee behaviour="scroll" direction="left" class="logo">
+    <img src=sponsor/groz.jpg>
+    <img src=sponsor/nippon.jpg>
+    <img src=sponsor/rekluse.png>
+    <img src=sponsor/lps.png>
+    <img src=sponsor/jcbl.png>
+    <img src=sponsor/cfw.png>
+    <img src=sponsor/pep.png>
+    <img src=sponsor/my.png>
+    <img src=sponsor/crystal.png>
+    <img src=sponsor/state.jpg>
+    <img src=sponsor/srf.jpg>
+    <img src=sponsor/ktm.jpg>
+    <img src=sponsor/hind.png>
+    <img src=sponsor/ric.png>
+    <img src=sponsor/wilwood.png>
+    <img src=sponsor/4i.jpg>
+    <img src=sponsor/tinkering.png>
+    <img src=sponsor/kaz.png>
+    <img src=sponsor/ansys.png>
+    <img src=sponsor/solid.png>
+    <img src=sponsor/mat.png>;
+  </marquee>
+</div>
+<section class="footer">
+<div>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 26.5112534, lng: 80.2306062};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArDM-W1kwJA0gTGe9iJ-dui2o-RoPlxuA&callback=initMap">
+</script>
+<div class="about-us">
+<span>
+  Society of Automotive Engineers (SAE)<br>
+  Indian Institute of Technology, Kanpur<br>
+  Kanpur-208016<br>
+  Uttar Pradesh (U.P.)<br>
+  India<br><br>
+
+  sae.iitk@gmail.com<br>
+  +91-7054127043<br>
+  </span>
+</div>
+        <form class="my_form">
+        <i class="fa fa-book"></i><div style="margin-left: 15%; margin-bottom:5% ;color:white ; font-weight: 500; font-size: 2rem;letter-spacing: 5px; text-transform: lowercase; display: inline;" >contact us</div><br>
+          <input placeholder="First name" id="first_name" type="text" class="validate">
+          <input placeholder="Last name" id="last_name" type="text" class="validate"><br>
+          <input placeholder="email" id="email" type="text" class="validate"><br>
+          <input placeholder="message" id="message" type="text" class="validate"><br>
+         <div class="submit_button">Submit</div>
+        </form>
+</div>
+</section>
 
     </body>
 </html>
