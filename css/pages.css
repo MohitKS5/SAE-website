@@ -245,3 +245,14 @@ li>img:hover, li>a>img:hover{
 
 }
 
+/*---------------------------------------------FOOTER------------------------------------------*/
+.logo{
+	height: 100px;
+}
+.logo>img{
+	height:70px;
+	padding-right: 2%;
+}
+.logo2{
+	margin-top: 50vh;
+}
