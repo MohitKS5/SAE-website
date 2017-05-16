@@ -108,7 +108,7 @@ html[xmlns] .flexslider .slides {
   transition: all 0.3s ease-in-out;
 }
 a:hover{
-	transform: scale(2);
+  
 }
 .flex-direction-nav a:before {
   font-size: 50px;
