@@ -15,11 +15,11 @@ jQuery(document).ready(function($){
 			// if it's not already selected
 			var selectedPosition = selectedItem.index(),
 				activePosition = $('.cd-hero-slider .selected').index();
-			if( activePosition < selectedPosition) {
+		//	if( activePosition < selectedPosition) {
 				nextSlide($('.cd-hero-slider'), $('.cd-slider-nav'), selectedPosition);
-			} else {
+		//	} else {
 				prevSlide($('.cd-hero-slider'), $('.cd-slider-nav'), selectedPosition);
-			}
+		//	}
 
 			updateNavigationMarker(selectedPosition+1);
 		}

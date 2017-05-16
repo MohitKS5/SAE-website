@@ -1,5 +1,6 @@
 var App = angular.module('sae', ['ngSanitize']);
 
+
 App.controller('carDetails', function($scope, $http) {
 	$scope.arr = [];
 	$http.get('js/json/cars.json')
@@ -68,7 +69,7 @@ App.controller('aboutDetails', function($scope, $http) {
 	}
 });
 
-
+//home page transitions
 App.controller('blogDetails', function($scope, $http) {
 	$scope.arr = [];
 	$http.get('js/json/blog.json')
