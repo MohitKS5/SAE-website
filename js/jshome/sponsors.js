@@ -1,3 +1,10 @@
+var chng_color=function chng_color(arg) {
+  $(arg).addClass('red_clr');
+  // body...
+};
+$('#tabs>a').mouseleave(function(){
+	$(arg).removeClass('red_clr');
+});
 jQuery(document).ready(function($){
 	var secondaryNav = $('.cd-secondary-nav'),
 		secondaryNavTopPosition = secondaryNav.offset().top,

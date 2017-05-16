@@ -6,7 +6,10 @@ var shrink_img= function shrink_img(argument) {
     $(argument).parent().height(200);
     $(argument).children().addClass("shrunk");
 };
-
+var chng_color=function chng_color(arg) {
+  $(arg).css({"color" : "red"});
+  // body...
+}
    
     $(window).load(function(){
       $('.flexslider').flexslider({

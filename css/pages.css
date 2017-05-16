@@ -12,7 +12,9 @@ nav{
 	z-index: 1000;
 	position: absolute;
 	}
-
+.red_clr{
+	color: red;
+}
 .soc-links{
 	position: absolute;
 	font-weight: 500;
@@ -43,21 +45,16 @@ nav{
 	color: #fff;
 	letter-spacing: 3px;
 }
-#tabsA{
-
-}
-#tabsA>a{
-
-}
-#home{
-	margin-left: 10%;
-}
 #tabs > a:hover{
 	color:red;
 }
 #tabs > a:active{
 	font-color:red;
 }
+#home{
+	margin-left: 10%;
+}
+
 
 .header_theme{
 	background-color: #fff !important;
