@@ -223,7 +223,6 @@ iframe.members{
 	overflow-x: hidden !important;
 }
 /*---------------------------------------------ALUMNI PAGE------------------------------------------*/
-/*---------------------------------------------ALUMNI PAGE------------------------------------------*/
 .people{
 	width: 20%;
 	display: inline-block;
@@ -267,4 +266,8 @@ iframe.members{
 }
 .logo2{
 	margin-top: 50vh;
+}
+/*----------------about-------------------*/
+p{
+	font-size: 20px !important;
 }
