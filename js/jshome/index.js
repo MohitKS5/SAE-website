@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 			// if it's not already selected
 			var selectedPosition = selectedItem.index(),
 				activePosition = $('.cd-hero-slider .selected').index();
-		//	if( activePosition < selectedPosition) {
+		//\\	if( activePosition < selectedPosition) {
 				nextSlide($('.cd-hero-slider'), $('.cd-slider-nav'), selectedPosition);
 		//	} else {
 				prevSlide($('.cd-hero-slider'), $('.cd-slider-nav'), selectedPosition);
@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
 		
 		container.children('li').eq(n).addClass('selected from-right').prevAll().addClass('move-left');
 		navigationDot.removeClass('selected')
-		pagination.find('li').eq(n).addClass('selected');
+		pagination.find('li').addClass('selected');
 
 		checkVideo(visibleSlide, container, n);
 	}

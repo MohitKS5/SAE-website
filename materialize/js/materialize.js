@@ -1520,12 +1520,12 @@ if (jQuery) {
         // TODO: Duplicate calls with swipeable? handle multiple div wrapping.
         $links.each(function () {
           var $curr_content = $(Materialize.escapeHash(this.hash));
-          $curr_content.addClass('carousel-item');
+          $curr_content.addClass('carousell-item');
           $tabs_content = $tabs_content.add($curr_content);
         });
-        $tabs_wrapper = $tabs_content.wrapAll('<div class="tabs-content carousel"></div>');
+        $tabs_wrapper = $tabs_content.wrapAll('<div class="tabs-content carousell"></div>');
         $tabs_content.css('display', '');
-        $('.tabs-content.carousel').carousel({
+        $('.tabs-content.carousell').carousell({
           fullWidth: true,
           noWrap: true,
           onCycleTo: function(item) {
@@ -1584,7 +1584,7 @@ if (jQuery) {
         // Swap content
         if (options.swipeable) {
           if ($tabs_content.length) {
-            $tabs_content.carousel('set', index);
+            $tabs_content.carousell('set', index);
           }
         } else {
           if ($content !== undefined) {
@@ -3768,14 +3768,14 @@ if (jQuery) {
 
       return this.each(function() {
 
-        // For each slider, we want to keep track of
+        // For each sliderr, we want to keep track of
         // which slide is active and its associated content
         var $this = $(this);
-        var $slider = $this.find('ul.slides').first();
-        var $slides = $slider.find('> li');
-        var $active_index = $slider.find('.active').index();
+        var $sliderr = $this.find('ul.slidess').first();
+        var $slidess = $sliderr.find('> li');
+        var $active_index = $sliderr.find('.active').index();
         var $active, $indicators, $interval;
-        if ($active_index != -1) { $active = $slides.eq($active_index); }
+        if ($active_index != -1) { $active = $slidess.eq($active_index); }
 
         // Transitions the caption depending on alignment
         function captionTransition(caption, duration) {
@@ -3793,20 +3793,20 @@ if (jQuery) {
         // This function will transition the slide to any index of the next slide
         function moveToSlide(index) {
           // Wrap around indices.
-          if (index >= $slides.length) index = 0;
-          else if (index < 0) index = $slides.length -1;
+          if (index >= $slidess.length) index = 0;
+          else if (index < 0) index = $slidess.length -1;
 
-          $active_index = $slider.find('.active').index();
+          $active_index = $sliderr.find('.active').index();
 
           // Only do if index changes
           if ($active_index != index) {
-            $active = $slides.eq($active_index);
+            $active = $slidess.eq($active_index);
             $caption = $active.find('.caption');
 
             $active.removeClass('active');
             $active.velocity({opacity: 0}, {duration: options.transition, queue: false, easing: 'easeOutQuad',
                               complete: function() {
-                                $slides.not('.active').velocity({opacity: 0, translateX: 0, translateY: 0}, {duration: 0, queue: false});
+                                $slidess.not('.active').velocity({opacity: 0, translateX: 0, translateY: 0}, {duration: 0, queue: false});
                               } });
             captionTransition($caption, options.transition);
 
@@ -3816,9 +3816,9 @@ if (jQuery) {
               $indicators.eq($active_index).removeClass('active');
             }
 
-            $slides.eq(index).velocity({opacity: 1}, {duration: options.transition, queue: false, easing: 'easeOutQuad'});
-            $slides.eq(index).find('.caption').velocity({opacity: 1, translateX: 0, translateY: 0}, {duration: options.transition, delay: options.transition, queue: false, easing: 'easeOutQuad'});
-            $slides.eq(index).addClass('active');
+            $slidess.eq(index).velocity({opacity: 1}, {duration: options.transition, queue: false, easing: 'easeOutQuad'});
+            $slidess.eq(index).find('.caption').velocity({opacity: 1, translateX: 0, translateY: 0}, {duration: options.transition, delay: options.transition, queue: false, easing: 'easeOutQuad'});
+            $slidess.eq(index).addClass('active');
 
 
             // Update indicators
@@ -3828,7 +3828,7 @@ if (jQuery) {
           }
         }
 
-        // Set height of slider
+        // Set height of sliderr
         // If fullscreen, do nothing
         if (!$this.hasClass('fullscreen')) {
           if (options.indicators) {
@@ -3838,17 +3838,17 @@ if (jQuery) {
           else {
             $this.height(options.height);
           }
-          $slider.height(options.height);
+          $sliderr.height(options.height);
         }
 
 
         // Set initial positions of captions
-        $slides.find('.caption').each(function () {
+        $slidess.find('.caption').each(function () {
           captionTransition($(this), 0);
         });
 
         // Move img src into background-image
-        $slides.find('img').each(function () {
+        $slidess.find('img').each(function () {
           var placeholderBase64 = 'data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
           if ($(this).attr('src') !== placeholderBase64) {
             $(this).css('background-image', 'url(' + $(this).attr('src') + ')' );
@@ -3859,12 +3859,12 @@ if (jQuery) {
         // dynamically add indicators
         if (options.indicators) {
           $indicators = $('<ul class="indicators"></ul>');
-          $slides.each(function( index ) {
+          $slidess.each(function( index ) {
             var $indicator = $('<li class="indicator-item"></li>');
 
             // Handle clicks on indicators
             $indicator.click(function () {
-              var $parent = $slider.parent();
+              var $parent = $sliderr.parent();
               var curr_index = $parent.find($(this)).index();
               moveToSlide(curr_index);
 
@@ -3872,8 +3872,8 @@ if (jQuery) {
               clearInterval($interval);
               $interval = setInterval(
                 function(){
-                  $active_index = $slider.find('.active').index();
-                  if ($slides.length == $active_index + 1) $active_index = 0; // loop to start
+                  $active_index = $sliderr.find('.active').index();
+                  if ($slidess.length == $active_index + 1) $active_index = 0; // loop to start
                   else $active_index += 1;
 
                   moveToSlide($active_index);
@@ -3891,10 +3891,10 @@ if (jQuery) {
           $active.show();
         }
         else {
-          $slides.first().addClass('active').velocity({opacity: 1}, {duration: options.transition, queue: false, easing: 'easeOutQuad'});
+          $slidess.first().addClass('active').velocity({opacity: 1}, {duration: options.transition, queue: false, easing: 'easeOutQuad'});
 
           $active_index = 0;
-          $active = $slides.eq($active_index);
+          $active = $slidess.eq($active_index);
 
           // Update indicators
           if (options.indicators) {
@@ -3910,7 +3910,7 @@ if (jQuery) {
         // auto scroll
         $interval = setInterval(
           function(){
-            $active_index = $slider.find('.active').index();
+            $active_index = $sliderr.find('.active').index();
             moveToSlide($active_index + 1);
 
           }, options.transition + options.interval
@@ -3937,7 +3937,7 @@ if (jQuery) {
             var velocityX = e.gesture.velocityX;
             var velocityY = e.gesture.velocityY;
 
-            $curr_slide = $slider.find('.active');
+            $curr_slide = $sliderr.find('.active');
             if (Math.abs(velocityX) > Math.abs(velocityY)) {
               $curr_slide.velocity({ translateX: x
                   }, {duration: 50, queue: false, easing: 'easeOutQuad'});
@@ -3957,7 +3957,7 @@ if (jQuery) {
             if (swipeLeft) {
               next_slide = $curr_slide.next();
               if (next_slide.length === 0) {
-                next_slide = $slides.first();
+                next_slide = $slidess.first();
               }
               next_slide.velocity({ opacity: 1
                   }, {duration: 300, queue: false, easing: 'easeOutQuad'});
@@ -3965,7 +3965,7 @@ if (jQuery) {
             if (swipeRight) {
               next_slide = $curr_slide.prev();
               if (next_slide.length === 0) {
-                next_slide = $slides.last();
+                next_slide = $slidess.last();
               }
               next_slide.velocity({ opacity: 1
                   }, {duration: 300, queue: false, easing: 'easeOutQuad'});
@@ -3977,11 +3977,11 @@ if (jQuery) {
         }).bind('panend', function(e) {
           if (e.gesture.pointerType === "touch") {
 
-            $curr_slide = $slider.find('.active');
+            $curr_slide = $sliderr.find('.active');
             panning = false;
-            curr_index = $slider.find('.active').index();
+            curr_index = $sliderr.find('.active').index();
 
-            if (!swipeRight && !swipeLeft || $slides.length <=1) {
+            if (!swipeRight && !swipeLeft || $slidess.length <=1) {
               // Return to original spot
               $curr_slide.velocity({ translateX: 0
                   }, {duration: 300, queue: false, easing: 'easeOutQuad'});
@@ -4007,8 +4007,8 @@ if (jQuery) {
             clearInterval($interval);
             $interval = setInterval(
               function(){
-                $active_index = $slider.find('.active').index();
-                if ($slides.length == $active_index + 1) $active_index = 0; // loop to start
+                $active_index = $sliderr.find('.active').index();
+                if ($slidess.length == $active_index + 1) $active_index = 0; // loop to start
                 else $active_index += 1;
 
                 moveToSlide($active_index);
@@ -4018,16 +4018,16 @@ if (jQuery) {
           }
         });
 
-        $this.on('sliderPause', function() {
+        $this.on('sliderrPause', function() {
           clearInterval($interval);
         });
 
-        $this.on('sliderStart', function() {
+        $this.on('sliderrStart', function() {
           clearInterval($interval);
           $interval = setInterval(
             function(){
-              $active_index = $slider.find('.active').index();
-              if ($slides.length == $active_index + 1) $active_index = 0; // loop to start
+              $active_index = $sliderr.find('.active').index();
+              if ($slidess.length == $active_index + 1) $active_index = 0; // loop to start
               else $active_index += 1;
 
               moveToSlide($active_index);
@@ -4036,13 +4036,13 @@ if (jQuery) {
           );
         });
 
-        $this.on('sliderNext', function() {
-          $active_index = $slider.find('.active').index();
+        $this.on('sliderrNext', function() {
+          $active_index = $sliderr.find('.active').index();
           moveToSlide($active_index + 1);
         });
 
-        $this.on('sliderPrev', function() {
-          $active_index = $slider.find('.active').index();
+        $this.on('sliderrPrev', function() {
+          $active_index = $sliderr.find('.active').index();
           moveToSlide($active_index - 1);
         });
 
@@ -4052,21 +4052,21 @@ if (jQuery) {
 
     },
     pause : function() {
-      $(this).trigger('sliderPause');
+      $(this).trigger('sliderrPause');
     },
     start : function() {
-      $(this).trigger('sliderStart');
+      $(this).trigger('sliderrStart');
     },
     next : function() {
-      $(this).trigger('sliderNext');
+      $(this).trigger('sliderrNext');
     },
     prev : function() {
-      $(this).trigger('sliderPrev');
+      $(this).trigger('sliderrPrev');
     }
   };
 
 
-  $.fn.slider = function(methodOrOptions) {
+  $.fn.sliderr = function(methodOrOptions) {
     if ( methods[methodOrOptions] ) {
       return methods[ methodOrOptions ].apply( this, Array.prototype.slice.call( arguments, 1 ));
     } else if ( typeof methodOrOptions === 'object' || ! methodOrOptions ) {
@@ -7633,8 +7633,8 @@ Picker.extend( 'pickadate', DatePicker )
 
 
         // Options
-        var setCarouselHeight = function() {
-          var firstImage = view.find('.carousel-item img').first();
+        var setCarousellHeight = function() {
+          var firstImage = view.find('.carousell-item img').first();
           if (firstImage.length) {
             if (firstImage.prop('complete')) {
               view.css('height', firstImage.height());
@@ -7644,18 +7644,18 @@ Picker.extend( 'pickadate', DatePicker )
               });
             }
           } else {
-            var imageHeight = view.find('.carousel-item').first().height();
+            var imageHeight = view.find('.carousell-item').first().height();
             view.css('height', imageHeight);
           }
         };
 
         if (options.fullWidth) {
           options.dist = 0;
-          setCarouselHeight();
+          setCarousellHeight();
 
           // Offset fixed items when indicators.
           if (showIndicators) {
-            view.find('.carousel-fixed-item').addClass('with-indicators');
+            view.find('.carousell-fixed-item').addClass('with-indicators');
           }
         }
 
@@ -7665,8 +7665,8 @@ Picker.extend( 'pickadate', DatePicker )
           // Recalculate variables
           $(window).trigger('resize');
 
-          // Redraw carousel.
-          $(this).trigger('carouselNext', [0.000001]);
+          // Redraw carousell.
+          $(this).trigger('carousellNext', [0.000001]);
           return true;
         }
 
@@ -7675,11 +7675,11 @@ Picker.extend( 'pickadate', DatePicker )
         pressed = false;
         offset = target = 0;
         images = [];
-        item_width = view.find('.carousel-item').first().innerWidth();
-        item_height = view.find('.carousel-item').first().innerHeight();
+        item_width = view.find('.carousell-item').first().innerWidth();
+        item_height = view.find('.carousell-item').first().innerHeight();
         dim = item_width * 2 + options.padding;
 
-        view.find('.carousel-item').each(function (i) {
+        view.find('.carousell-item').each(function (i) {
           images.push($(this)[0]);
           if (showIndicators) {
             var $indicator = $('<li class="indicator-item"></li>');
@@ -7792,7 +7792,7 @@ Picker.extend( 'pickadate', DatePicker )
 
             // Add active class to center item.
             if (!$(el).hasClass('active')) {
-              view.find('.carousel-item').removeClass('active');
+              view.find('.carousell-item').removeClass('active');
               $(el).addClass('active');
             }
             el.style[xform] = alignment +
@@ -7865,7 +7865,7 @@ Picker.extend( 'pickadate', DatePicker )
           // onCycleTo callback
           if (lastCenter !== center &&
               typeof(options.onCycleTo) === "function") {
-            var $curr_item = view.find('.carousel-item').eq(wrap(center));
+            var $curr_item = view.find('.carousell-item').eq(wrap(center));
             options.onCycleTo.call(this, $curr_item, dragged);
           }
         }
@@ -7899,17 +7899,17 @@ Picker.extend( 'pickadate', DatePicker )
         }
 
         function click(e) {
-          // Disable clicks if carousel was dragged.
+          // Disable clicks if carousell was dragged.
           if (dragged) {
             e.preventDefault();
             e.stopPropagation();
             return false;
 
           } else if (!options.fullWidth) {
-            var clickedIndex = $(e.target).closest('.carousel-item').index();
+            var clickedIndex = $(e.target).closest('.carousell-item').index();
             var diff = (center % count) - clickedIndex;
 
-            // Disable clicks if carousel was shifted by click
+            // Disable clicks if carousell was shifted by click
             if (diff !== 0) {
               e.preventDefault();
               e.stopPropagation();
@@ -7933,10 +7933,10 @@ Picker.extend( 'pickadate', DatePicker )
 
           // Call prev or next accordingly.
           if (diff < 0) {
-            view.trigger('carouselNext', [Math.abs(diff)]);
+            view.trigger('carousellNext', [Math.abs(diff)]);
 
           } else if (diff > 0) {
-            view.trigger('carouselPrev', [diff]);
+            view.trigger('carousellPrev', [diff]);
           }
         }
 
@@ -8035,10 +8035,10 @@ Picker.extend( 'pickadate', DatePicker )
         });
 
 
-        $(window).off('resize.carousel-'+uniqueNamespace).on('resize.carousel-'+uniqueNamespace, function() {
+        $(window).off('resize.carousell-'+uniqueNamespace).on('resize.carousell-'+uniqueNamespace, function() {
           if (options.fullWidth) {
-            item_width = view.find('.carousel-item').first().innerWidth();
-            item_height = view.find('.carousel-item').first().innerHeight();
+            item_width = view.find('.carousell-item').first().innerWidth();
+            item_height = view.find('.carousell-item').first().innerHeight();
             dim = item_width * 2 + options.padding;
             offset = center * 2 * item_width;
             target = offset;
@@ -8050,7 +8050,7 @@ Picker.extend( 'pickadate', DatePicker )
         setupEvents();
         scroll(offset);
 
-        $(this).on('carouselNext', function(e, n) {
+        $(this).on('carousellNext', function(e, n) {
           if (n === undefined) {
             n = 1;
           }
@@ -8062,7 +8062,7 @@ Picker.extend( 'pickadate', DatePicker )
           }
         });
 
-        $(this).on('carouselPrev', function(e, n) {
+        $(this).on('carousellPrev', function(e, n) {
           if (n === undefined) {
             n = 1;
           }
@@ -8074,7 +8074,7 @@ Picker.extend( 'pickadate', DatePicker )
           }
         });
 
-        $(this).on('carouselSet', function(e, n) {
+        $(this).on('carousellSet', function(e, n) {
           if (n === undefined) {
             n = 0;
           }
@@ -8087,25 +8087,25 @@ Picker.extend( 'pickadate', DatePicker )
 
     },
     next : function(n) {
-      $(this).trigger('carouselNext', [n]);
+      $(this).trigger('carousellNext', [n]);
     },
     prev : function(n) {
-      $(this).trigger('carouselPrev', [n]);
+      $(this).trigger('carousellPrev', [n]);
     },
     set : function(n) {
-      $(this).trigger('carouselSet', [n]);
+      $(this).trigger('carousellSet', [n]);
     }
   };
 
 
-    $.fn.carousel = function(methodOrOptions) {
+    $.fn.carousell = function(methodOrOptions) {
       if ( methods[methodOrOptions] ) {
         return methods[ methodOrOptions ].apply( this, Array.prototype.slice.call( arguments, 1 ));
       } else if ( typeof methodOrOptions === 'object' || ! methodOrOptions ) {
         // Default to "init"
         return methods.init.apply( this, arguments );
       } else {
-        $.error( 'Method ' +  methodOrOptions + ' does not exist on jQuery.carousel' );
+        $.error( 'Method ' +  methodOrOptions + ' does not exist on jQuery.carousell' );
       }
     }; // Plugin end
 }( jQuery ));;(function ($) {
