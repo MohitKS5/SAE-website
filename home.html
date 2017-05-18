@@ -607,6 +607,24 @@ The design goals for this car were decreasing car’s weight by 25% - 60kg (from
 </div>
 </section>
 
+ <div id="_preloader"> 
+
+     <div id="loader">
+     <h1>SAE IITKANPUR</h1>
+        <div class="object"></div>
+      <div class="object"></div>
+      <div class="object"></div>
+      <div class="object"></div>
+      <div class="object"></div>
+      <div class="object"></div>
+      <div class="object"></div>
+      <div class="object"></div>
+      <div class="object"></div>
+      <div class="object"></div>
+      <br>
+      <div style="color: yellow; font-size:1.8rem; position: absolute; transform: translate(50px,80px); opacity: 0.5; ">worth waiting xD....</div>
+    </div>
+  </div> 
 
 <script type="text/javascript">
           $('.carousell.carousell-sliderr').carousell({fullWidth: true});
@@ -627,15 +645,25 @@ The design goals for this car were decreasing car’s weight by 25% - 60kg (from
 
     $("li.indicator-item").first().click(function () {
        window.scrollTo(0, 0);
-      $('body').css({"overflow" : "hidden"});
+     // $('body').css({"overflow" : "hidden"});
     });
        $(document).ready(function(){
       if($('li.indicator-item').first().hasClass('active')){
         window.scrollTo(0, 0);
-        $('body').css({"overflow" : "hidden"});
+       // $('body').css({"overflow" : "hidden"});
       }
         
     });
+
+        $(window).load(function() {
+  // will first fade out the loading animation 
+         $("#loader").delay(1000).fadeOut("slow", function(){
+
+        // will fade out the whole DIV that covers the website.
+        $("#_preloader").fadeOut("slow");
+
+      }); 
+  });
 
         </script>
 </body>
