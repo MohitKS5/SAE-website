@@ -7998,15 +7998,14 @@ input[type=range]:focus::-ms-fill-upper {
 
 .carousell .carousell-item {
   display: none;
-  width: 200px;
-  height: 200px;
+  width: 600px;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .carousell .carousell-item > img {
-  width: 100%;
+  width:100%;
 }
 
 .carousell .indicators {
@@ -8045,7 +8044,7 @@ input[type=range]:focus::-ms-fill-upper {
   width: 800px;
   height: 800px;
   position: fixed;
-  z-index: 1000;
+  z-index: 10;
   visibility: hidden;
   transition: visibility 0s .3s;
 }

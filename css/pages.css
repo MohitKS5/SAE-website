@@ -3,9 +3,19 @@ html{
 }
 body{
 	font-size: 10px;
-	
+	 background-attachment: fixed;
+     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/sae_back.jpg');
+  	background-position: center center, center center;
+  	background-repeat: repeat, no-repeat;
+	background-size: cover;
+}
+.cd-main-content{
+	background:transparent!important;
 }
 
+#_members{
+	background-color: white !important;
+}
 /*-------------nav -------------------*/
 nav{
 	margin-top: 50%;
@@ -62,7 +72,9 @@ nav{
 
 }
 
-
+.tab-content{
+	background:transparent!important;
+}
 /*-----------cover-------------*/
 .cover{
 	margin-left: 0%;
@@ -377,3 +389,6 @@ p{
 
 
 
+#_gallery{
+	margin: 10% 0 10% 0;
+}
