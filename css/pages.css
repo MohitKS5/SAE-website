@@ -30,13 +30,22 @@ nav{
 	font-weight: 500;
 	border:0px solid black;
 	left: 90%;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color:#333;
 	display: none;
 	transform: translate(-40%,-120%);
 }
 .soc-links>i:hover{
 	color: red;
+}
+
+._navbar{
+	width: 100vw;
+	height: 100px;
+	z-index: 800;
+	position: absolute;
+	position: fixed;
+	display: none;
 }
 #tabs{
 	background-color: #000;
@@ -51,12 +60,12 @@ nav{
 	font-weight: 400;
 	text-transform: uppercase;
 	border-right: 1px solid #f2f2f2;
-	font-size: 1rem;
+	font-size: 3rem;
 	color: #fff;
 	letter-spacing: 3px;
 }
 #tabs > a:hover{
-	color:red;
+	color:red!important;
 }
 #tabs > a:active{
 	font-color:red;
@@ -386,9 +395,52 @@ p{
   
 }
 
-
-
+.glow_class{
+	animation: glow 3s infinite;
+	animation-delay: 1s;
+}
+.indicator-item:hover{
+	color: red;
+}
+@keyframes glow{
+	0%{
+		color: #fff;
+		background-color: rgba(0,0,0,0);
+	}
+	25%{
+		color: #fff;
+		background-color: rgba(0,0,0,0);
+	}
+	50%{
+		color: red;
+		background-color: rgba(0,0,0,0.4);
+	}
+	75%{
+		color: #fff;
+		background-color: rgba(0,0,0,0);
+	}
+	100%{
+		color: #fff;
+		background-color: rgba(0,0,0,0);
+	}
+}
 
 #_gallery{
 	margin: 10% 0 10% 0;
+}
+/*----------top images---------------*/
+#_homepagecarousel>img , ._coverimg{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	right: 0px;
+
+}
+
+.fixit{
+	position: fixed;
+}
+.indicators{
+	background-color: black;
+	height: 8rem;
 }

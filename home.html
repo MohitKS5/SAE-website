@@ -2,13 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SAE IIT Kanpur</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SAE IIT Kanpur</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="css/pages.css">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="icon" href="logo.ico" type="image/x-icon" /><!-- Place favicon.ico in the root directory -                    <!--above navbar-->
+  <link rel="icon" href="logo.ico" type="image/x-icon" /><!-- Place favicon.ico in the root directory -                    <!above navbar-->
   <link rel="stylesheet" href="css/csshome/Font_Families.css">
   <link rel="stylesheet" href="css/csshome/sponsors.css">  
   <link href="https://fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet">
@@ -22,12 +28,8 @@
   <script src="js/jshome/angular.min.js"></script>
   <script src="js/jshome/angular-sanitize.js"></script>
   <script src="js/jshome/sd.js"></script>
+  <script src="js/jshome/main.js"></script>
  
-      <!--script src="js/jshome/plgins.js"></script>
-      <script src="js/jshome/bootstrap.min.js"></script>
-      <script src="js/jshome/sponsors.js"></script>
-      <script src="js/ain.js"></script>
-      <script src="js/jshome/about.js"></script-->
 </head>
 <body>
 
@@ -35,20 +37,44 @@
   .full_size{height: 100vh!important;}
 </style>
 
+<div class="_navbar">
+    <img src="images/sae.jpg" style="position: absolute; height: 50%; margin: 1% 0 0 3%;">
+        <div id="tabs">
+        <a href="" onmouseenter="chng_color(this)"  id="home">home</a>
+        <a href="" onmouseenter="chng_color(this)"  data-id="tab-about">about</a>
+        <a href="" onmouseenter="chng_color(this)" >sponsors</a>
+        <a href="" onmouseenter="chng_color(this)"  data-id="tab-members" class="">members</a>
+        <a href="" onmouseenter="chng_color(this)"  data-id="tab-alumni">alumni</a>
+        <a href="" onmouseenter="chng_color(this)" >gallery</a>
+        <a href="" onmouseenter="chng_color(this)" >contact us</a>     
+      </div>
+    <div class="soc-links">
+      <i class="fa fa-facebook-official"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-google-plus"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>  
+</div>
+
 <div class="carousell carousell-sliderr center full_size" data-indicators="true">
     <div class="carousell-fixed-item center">
      
     </div>
-    <div class="carousell-item red white-text" href="#one!">
-      <h2>First Panel</h2>
-      <p class="white-text"></p>
+    <div class="carousell-item white white-text" href="#one!">
+      <div id="_homepagecarousel">
+      <img src="images/gallery/14.jpg">
+      <img src="images/gallery/2.jpg">
+      <img src="images/gallery/3.jpg">
+      </div>
     </div>
     <div class="carousell-item amber white-text" href="#two!">
-      <h2>Second Panel</h2>
+      <div id="_aboutpage">
+        <img src="images/gallery/7.jpg" class="_coverimg">
+      </div>
       <p class="white-text"></p>
     </div>
     <div class="carousell-item green white-text" href="#three!">
-      <h2>Third Panel</h2>
+      <img src="images/gallery/5.JPG" class="_coverimg">
       <p class="white-text"></p>
     </div>
     <div class="carousell-item blue white-text" href="#four!">
@@ -65,6 +91,11 @@
     </div>
   </div>
    
+
+
+
+
+
 <section class="tab-content" id="_home"></section>
 
 <section class="tab-content" id="_about">
@@ -277,6 +308,102 @@ The design goals for this car were decreasing car’s weight by 25% - 60kg (from
       </main>
 
 </section>
+
+<section class="tab-content" id="_sponsors">
+      <main class="cd-main-content" style="background:white;">
+        <main class="cd-main-content" style="background:white;">
+      <section id="cd-placeholder-0" class="cd-section cd-container">
+        <h2>Our Proud Sponsors</h2>
+        <h3>Season-I Sponsors</h3>
+        <div class="sponsors-list">
+          <div class="row">
+            <a ng-repeat="i in arr.sponsor_list" ng-href="{{i.website}}" target="_blank" class="col-md-3 col-xs-3">
+                          <img ng-src="img/sponsors/{{i.image_src}}" style="">
+                      </a>
+          </div>
+        </div>
+      </section>
+      <section id="cd-placeholder-1" class="cd-section cd-container">
+        <h2>About Our Sponsors</h2>
+        <p>
+          SAE IITK is always looking for new partners who can support and better our project. Besides increasing brand awareness through various events, partnering with us also brings you in contact with young, motivated potential employees. Projects like Formula SAE Italy provides our team members with more practical knowledge and experience and an edge over other graduates. Our team members have the unique and valuable experience of building a complete car encompassing aspects like designing, manufacturing, testing and marketing. Being adept in not only technical domain but also in team work, organisation and project management, they develop strong principles and skills in professionalism, work-ethics and leading from the front.
+        </p>
+        <p style="margin-top:10px;">
+          The media and public attention of FSAE has always been on the rise. We always emphasize our relationship with sponsors when we managing or holding any event. Being associated with young, dynamic motivated technical students from one of the best engineering institute of the country is great when you are looking to further enhance your company's image. This goal being accomplished through multiple planned publicity avenues taken care by our dedicated marketing and event-management team.
+        </p>
+      </section> <!-- #cd-placeholder-1 -->
+
+      <section id="cd-placeholder-2" class="cd-section cd-container">
+        <h2>Sponsors' Role</h2>
+        <h3>Financial Assistance</h3>
+        <p>Finance is the lifeline of any project. We welcome sponsorship of any amount which will help this initiative to be successfully completed.</p>
+        <h3>Technical Knowledge and Guidance</h3>
+        <p>The success of this project is dependent on the technical know-how which is often not available in academic circles. Your contribution on this front will be invaluable.</p>
+        <h3>Parts Sponsorship</h3>
+        <p>The completion of the Formula Race Car is dependent on the availability of special parts that are rarely available in the open market.</p>
+        <h3>Industrial Contacts</h3>
+        <p>Sometimes, getting in touch with the right people is more important for taking the project ahead. Various machining processes and heat treatment processes require expertise and knowledge that may be rare.</p>
+      </section> <!-- #cd-placeholder-2 -->
+
+      <section id="cd-placeholder-3" class="cd-section cd-container">
+        <h2>Sponsors Scheme</h2>
+        <table style="table-layout:fixed;">
+          <thead>
+            <tr><th style="padding-top:20px;">Benefits</th><th>Title<br>( 700k+ )</th><th>Gold<br>( 500k+ )</th><th>Silver<br>( 300k+ )</th><th>Bronze<br>( 100k+ )</th><th>Partner<br>( 50k+ )</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tax Exemption</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td></tr>
+            <tr><td>Promotion On Team's Fan Page</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td></tr>
+            <tr><td>Website (Logo And Hyperlink)</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td></tr>
+            <tr><td>Newsletter</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class=""></span></td></tr><tr><td>Poster At Pit</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class=""></span></td></tr>
+            <tr><td>Sponsor Logo On Car</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class=""></span></td></tr>
+            <tr><td>Recruitment From IIT</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class=""></span></td></tr>
+            <tr><td>Publicity In College Festivals</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class=""></span></td><td><span class=""></span></td></tr>
+            <tr><td>Recognition During Media Exposure</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class=""></span></td><td><span class=""></span></td></tr>
+            <tr><td>Logo On Apparel And Helmet</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class=""></span></td><td><span class=""></span></td><td><span class=""></span></td></tr>
+            <tr><td>Company's Name Associated With Vehicle's Name</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class=""></span></td><td><span class=""></span></td><td><span class=""></span></td><td><span class=""></span></td></tr>
+            <tr><td style="padding-bottom:20px;">Promotional Displays At Company's Events</td><td><span class="font-icon font-icon-checkbox-checked"></span></td><td><span class=""></span></td><td><span class=""></span></td><td><span class=""></span></td><td><span class=""></span></td></tr>
+          </tbody>
+        </table>
+      </section> <!-- #cd-placeholder-3 -->
+
+      <section id="cd-placeholder-4" class="cd-section cd-container">
+        <h2>Why Sponsor Us</h2>
+        <h3>Sponsor Logo on the car</h3>
+        <p>The company logo will be displayed on prominent positions on the car as well as on team uniforms publicizing the company in an international event. There are 10,000 students participating across the world and an event audience of over 100,000 enthusiastic people. FSAE is an irresistible chance to market your valuable brand.</p>
+        <h3>Official night</h3>
+        <p>We will organize an event where you can view the car up close, ask questions and meet the entire team including faculty members and special guests.</p>
+        <h3>Public Events</h3>
+        <p>Our team will attend a number of public events a year. Some of which includes the prestigious Auto Expo in Delhi, Mini Auto Expo in Chandigarh and industry visits.</p>
+        <h3>Promotional displays</h3>
+        <p>We will present our car at various company events our sponsors may hold throughout the year. This will allow company employees an opportunity to see the car as well as their associates and will make company stand out at an expo.</p>
+        <h3>Corporate Social Responsibility</h3>
+        <p>Funding and guiding a project which support innovation for development of new technology will add to CSR of your company.</p>
+        <h3>College Festivals</h3>
+        <p>Our sponsors will be promoted through Techkriti (our technical festival) where the car will be displayed.</p>
+        <h3>Talent from IIT</h3>
+        <p>Your company would be invited by our institute where you can take the best students of the country as your future employees.</p>
+        <h3>Sponsor Focus in Newsletter</h3>
+        <p>The sponsor companies will get focus in our newsletter highlighting their products/brands. The newsletter will reach all the stakeholders (sponsors, administration, faculty etc.) and in our residency campus comprising 10000 residents.</p>
+        <h3>Website</h3>
+        <p>We have a website that highlights sponsor contribution in great detail whilst showcasing the car design and the team and providing regular updates on the team's progress. Also, the technical details we provide on our site serve as a platform of learning for many students.</p>
+        <h3>Launch</h3>
+        <p>Once manufacturing is complete, a press confrence will be organised to unveil the car, which will give our sponsors maximum coverage in national print and television media.It will also involve faculty members,engineers and technicians from various places.</p>
+        <h3>Tax Exemption Benefits</h3>
+        <p>Income Tax rebate of 25% for research purpose (Section 35, Income Tax Act)</p>
+      </section> <!-- #cd-placeholder-4 -->
+
+      <section id="cd-placeholder-5" class="cd-section cd-container">
+        <h2>Our Brochure</h2>
+        <div data-configid="16498224/12646253" style="width:650px; height:459px;" class="issuuembed"></div><script type="text/javascript" src="http://e.issuu.com/embed.js" async="true"></script>
+      </section>
+      </main>
+
+  </main>
+  </section>
+
+
+
 <section class="container main-content tab-content" id="_members">
 	
 	<h1>MEMBERS</h1><h4> PAGE</h4>
@@ -480,7 +607,7 @@ The design goals for this car were decreasing car’s weight by 25% - 60kg (from
 
 </section>      <!--    members page      -->
 
-<section class="tab-content" id="_alumini">
+<section class="tab-content" id="_alumni">
   <section class="container main-content">
     <h1>Alumni page</h1>
       <section class="photos">
@@ -514,7 +641,7 @@ The design goals for this car were decreasing car’s weight by 25% - 60kg (from
           </div>
       </section>
   </section>
-</section>  <!--           alumini page             -->
+</section>  <!--           alumni page             -->
 
 <section class="tab-content" id="_gallery">
   <div class="carousell">
@@ -597,7 +724,7 @@ The design goals for this car were decreasing car’s weight by 25% - 60kg (from
   </pre>
 </div>
         <form class="container my_form">
-        <i class="fa fa-book"></i><div style="margin-left: 15%; margin-bottom:5% ;color:white ; font-weight: 500; font-size: 2rem;letter-spacing: 5px; text-transform: lowercase; display: inline;" >contact us</div><br>
+        <div style="margin-left: 15%; margin-bottom:5% ;color:white ; font-weight: 500; font-size: 2rem;letter-spacing: 5px; text-transform: lowercase; display: inline;" ><i class="fa fa-book"></i>contact us</div><br>
           <input placeholder="First name" id="first_name" type="text" class="validate">
           <input placeholder="Last name" id="last_name" type="text" class="validate"><br>
           <input placeholder="email" id="email" type="text" class="validate"><br>
@@ -630,37 +757,75 @@ The design goals for this car were decreasing car’s weight by 25% - 60kg (from
           .next().html("about")
           .next().html("sponsors")
           .next().html("members")
-          .next().html("alumini")
+          .next().html("alumni")
           .next().html("gallery");
 
-    $("li.indicator-item").click(function () {
+    $("#tabs>a").click(function (event) {
+        var wind_height= $(window).height();
+        event.preventDefault();
+        var a=$(this).html();
+         $('li.indicator-item:contains('+a+')').trigger('click');
+      });
+
+    $("li.indicator-item").click(function (event) {
+        var wind_height= $(window).height();
         var a=$(this).html();
          $(".tab-content").hide();
          var activeTab = $(this).html();
          $("#_" + activeTab).fadeIn(700);
-         $('body').css({"overflow" : "scroll"});
+         var SNTPosition =$('ul.indicators').offset().top;
+      if (a==='home') {$('li.indicator-item').addClass('glow_class'); }
+      else{  
+        $('li.indicator-item').removeClass('glow_class'); 
+        $('body').css({"overflow-y" : "scroll"});
+         if (($(window).scrollTop()>SNTPosition)) { 
+            $('html, body').stop().animate({
+            'scrollTop' : wind_height
+            },800);
+         }
+        else{
+          setTimeout(()=>{$('html, body').stop().animate({
+          'scrollTop' : wind_height
+          },800);},1000);}
+       }
+        
       });
+
+    $("#tabs>a").first().click(function (event) {
+       event.preventDefault();
+       window.scrollTo(0, 0);
+      $('body').css({"overflow-y" : "hidden"});
+    });
 
     $("li.indicator-item").first().click(function () {
        window.scrollTo(0, 0);
-     // $('body').css({"overflow" : "hidden"});
+      $('body').css({"overflow-y" : "hidden"});
     });
        $(document).ready(function(){
       if($('li.indicator-item').first().hasClass('active')){
         window.scrollTo(0, 0);
-       // $('body').css({"overflow" : "hidden"});
-      }
-        
+        $('body').css({"overflow-y" : "hidden"});
+      }        
     });
 
-        $(window).load(function() {
+        $(document).ready(function() {
   // will first fade out the loading animation 
-         $("#loader").delay(1000).fadeOut("slow", function(){
+         $("#loader").fadeOut("slow", function(){
 
         // will fade out the whole DIV that covers the website.
         $("#_preloader").fadeOut("slow");
-
       }); 
+       
+       $("#_homepagecarousel>img:not(:nth-child(1))").hide();
+
+    setInterval(function() { 
+      $('#_homepagecarousel > img:first')
+        .fadeOut(1500)
+        .next()
+        .fadeIn(1500)
+        .end()
+        .appendTo('#_homepagecarousel');
+    },  3000);
   });
 
         </script>
