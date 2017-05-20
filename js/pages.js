@@ -1,9 +1,14 @@
  
 var grow_img= function grow_img(argument){
-    $(argument).parent().height(500);
+   var $slider=$(argument).parent().parent().parent().parent();
+   console.log($slider);
+   $slider.removeClass('slider').addClass('sliderhover');
+   $(argument).parent().height(500);
 };
 var shrink_img= function shrink_img(argument) {
+    var $slider=$(argument).parent().parent().parent().parent();
     $(argument).parent().height(200);
+    $slider.removeClass('sliderhover').addClass('slider');
     $(argument).children().addClass("shrunk");
 };
 

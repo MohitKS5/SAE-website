@@ -192,8 +192,12 @@ li>img:hover, li>a>img:hover{
 }
 /*----------flex slider-----------------*/
 .slider{
+	width: 60%;
+	margin-left: 20%;
+}
+.sliderhover{
 	width: 90%;
-	margin-left: 5%;
+	margin-left: 20%;
 }
 
 
