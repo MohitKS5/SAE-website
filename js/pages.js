@@ -4,6 +4,8 @@ var grow_img= function grow_img(argument){
    console.log($slider);
    $slider.removeClass('slider').addClass('sliderhover');
    $(argument).parent().height(500);
+   $(argument).next('i').css({"font-size" : "20px"});
+
 };
 var shrink_img= function shrink_img(argument) {
     var $slider=$(argument).parent().parent().parent().parent();

@@ -810,7 +810,7 @@ The design goals for this car were decreasing car’s weight by 25% - 60kg (from
 
         $(document).ready(function() {
   // will first fade out the loading animation 
-         $("#loader").fadeOut("slow", function(){
+         $("#loader").delay(1000).fadeOut("slow", function(){
 
         // will fade out the whole DIV that covers the website.
         $("#_preloader").fadeOut("slow");
