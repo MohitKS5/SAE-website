@@ -397,28 +397,12 @@ p{
 	animation-delay: 1s;
 }
 .indicator-item:hover{
-	color: red;
+	color: white;
 }
 @keyframes glow{
-	0%{
-		color: #fff;
-		background-color: rgba(0,0,0,0);
-	}
-	25%{
-		color: #fff;
-		background-color: rgba(0,0,0,0);
-	}
+	
 	50%{
-		color: red;
-		background-color: rgba(0,0,0,0.4);
-	}
-	75%{
-		color: #fff;
-		background-color: rgba(0,0,0,0);
-	}
-	100%{
-		color: #fff;
-		background-color: rgba(0,0,0,0);
+		color: #666;
 	}
 }
 
@@ -438,6 +422,16 @@ p{
 	position: fixed;
 }
 .indicators{
-	background-color: black;
+	background-color: transparent;
+	border-radius: 100px 100px 0 0;
 	height: 8rem;
+}
+.center_screen{
+	left:50%;
+	top: 50%;
+	font-size: 100px;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-weight: 900;
+	position: absolute;
 }
