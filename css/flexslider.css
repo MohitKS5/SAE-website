@@ -105,7 +105,7 @@ html[xmlns] .flexslider .slides {
   margin: -20px 0 0;
   position: absolute;
   top: 10px;
-  padding-top: 100px;
+  padding-top: 40px;
   z-index: 10;
   overflow: hidden;
   opacity: 0;
@@ -122,10 +122,10 @@ a:hover{
   
 }
 .flex-direction-nav a:before {
-  font-size: 50px;
+  font-size: 80px;
   z-index: 10;
   font-weight: 900;
-  transform: translateY(-13px);
+  transform: translateY(-13px,30px);
   color: red !important;
   display: inline-block;
   content: '<';

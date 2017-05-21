@@ -431,7 +431,8 @@ p{
 	top: 50%;
 	font-size: 100px;
 	transform: translate(-50%,-50%);
-	color: white;
-	font-weight: 900;
+	color: rgba(255,255,255,255,.7);
+	font-weight: 600;
 	position: absolute;
+	font-family: 'Ruslan Display', cursive;
 }
