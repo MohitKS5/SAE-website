@@ -1,17 +1,16 @@
  
 var grow_img= function grow_img(argument){
-   var $slider=$(argument).parent().parent().parent().parent();
-   console.log($slider);
-   $slider.removeClass('slider').addClass('sliderhover');
-   $(argument).parent().height(500);
-   $(argument).next('i').css({"font-size" : "20px"});
-
+  /* $(argument).css({
+  "background-image" : "url('../../images/gallery/1.jpg')",
+  "background-size" : "cover"
+});*/
+ 
 };
 var shrink_img= function shrink_img(argument) {
-    var $slider=$(argument).parent().parent().parent().parent();
+   /* var $slider=$(argument).parent().parent().parent().parent();
     $(argument).parent().height(200);
     $slider.removeClass('sliderhover').addClass('slider');
-    $(argument).children().addClass("shrunk");
+    $(argument).children().addClass("shrunk");*/
 };
 
 var chng_color=function chng_color(arg) {
@@ -28,6 +27,8 @@ var chng_color=function chng_color(arg) {
           $('body').removeClass('loading');
         }
       });
+    $('a.flex-pause').hide();
+    $('ul.slides>li:nth-child(1)').css({"margin-left" : "0px"});
 
 if($("li.indicator-item").first().hasClass('active')){
   $('li.indicator-item').addClass('glow_class');

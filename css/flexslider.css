@@ -22,13 +22,24 @@
   margin: 0;
   padding: 0;
 }
-.flexslider .slides > li {
-  display: none;
+.flexslider .slides  li {
   -webkit-backface-visibility: hidden;
 }
+
+
 .flexslider .slides img {
-  width: 100%;
+  width: 200px;
+  height: 200px!important;
   display: block;
+}
+.slides img{
+   border-radius: 100px;
+}
+.slides span{
+  text-align: center;
+  width: 200px;
+  display: block;
+  font-size: 2rem;
 }
 .flexslider .slides:after {
   content: "\0020";
