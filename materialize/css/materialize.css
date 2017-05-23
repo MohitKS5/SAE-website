@@ -7940,6 +7940,7 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: #e0e0e0;
   transition: background-color .3s;
   border-radius: 50%;
+  font-family: 'Anton', sans-serif !important;
 }
 
 .sliderr .indicators .indicator-item.active {

@@ -72,6 +72,7 @@ html[xmlns] .flexslider .slides {
   -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 100px 0 0 20px;
 }
 .flexslider .slides {
   zoom: 1;
@@ -93,6 +94,7 @@ html[xmlns] .flexslider .slides {
 }
 .carousel li {
   margin-right: 5px;
+
 }
 .flex-direction-nav {
   *height: 0;
@@ -125,12 +127,13 @@ a:hover{
   font-size: 80px;
   z-index: 10;
   font-weight: 900;
-  transform: translateY(-13px,30px);
+  transform: translate(-10px,30px);
   color: red !important;
-  display: inline-block;
+  display: none;
   content: '<';
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+
 }
 .flex-direction-nav a.flex-next:before {
   content: '>';

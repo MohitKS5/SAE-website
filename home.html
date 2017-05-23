@@ -16,8 +16,8 @@
   <link rel="icon" href="logo.ico" type="image/x-icon" /><!-- Place favicon.ico in the root directory -                    <!above navbar-->
   <link rel="stylesheet" href="css/csshome/Font_Families.css">
   <link rel="stylesheet" href="css/csshome/sponsors.css">  
-  <link href="https://fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet"><!--font for headings-->
-  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <link href="https://fonts.googleapis.com/css?family=Anton|Lily+Script+One|Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
   <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet"><!--font for top panels-->
 
   <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script><!--jquery-->
@@ -66,7 +66,7 @@
     </div>
     <div class="carousell-item amber white-text" href="#two!">
       <div id="_aboutpage">
-        <img src="images/about.jpg" class="_coverimg">
+        <img src="images/about.jpg" class="_coverimg"/>
       </div>
       <span class="center_screen">About</span>
     </div>
@@ -174,17 +174,9 @@
 
         <section id="cd-placeholder-5" class="cd-section cd-container">
         <h2>Effi-Cycle</h2>
-        <p>Efficycle is an intercollegiate design competition for undergraduate and graduate students where teams have to design and fabricate an energy efficient entirely human
-        powered three-wheeled vehicle. The vehicle must be aerodynamic, highly engineered
-        and ergonomically designed. The design should be commercially viable as a product and
-        should be attractive to the consumers because of its visual appearance, performance,
-        reliability and ease of operation. 
+        <p>Efficycle is an intercollegiate design competition for undergraduate and graduate students where teams have to design and fabricate an energy efficient entirely human powered three-wheeled vehicle. The vehicle must be aerodynamic, highly engineeredand ergonomically designed. The design should be commercially viable as a product andshould be attractive to the consumers because of its visual appearance, performance,reliability and ease of operation. 
         </p><br>
-        <p>The Competition includes designing, validating and fabricating a three wheeled vehicle
-        driven by two drivers. The vehicle would be capable to be driven simultaneously as well
-        as alternatively by two drivers. The vehicle would be evaluated for its design and
-        performance and the teams compete against each other. The cumulative scores of all
-        the events would decide the overall ranking of the teams in the event. </p>
+        <p>The Competition includes designing, validating and fabricating a three wheeled vehicle driven by two drivers. The vehicle would be capable to be driven simultaneously as well as alternatively by two drivers. The vehicle would be evaluated for its design and performance and the teams compete against each other. The cumulative scores of all the events would decide the overall ranking of the teams in the event. </p>
         </section> <!-- #cd-placeholder-5 -->
         
         <section id="cd-placeholder-6" class="cd-section cd-container">
@@ -250,8 +242,7 @@
 
       <div class="cd-timeline-content">
         <h2>Formula Student '15</h2>
-        <p>We started our first season of Formula SAE with emphasis being laid on designing a car which is simple yet efficient. Drivability, reliability and cost effectiveness were the specific areas focused upon.
-Emphasis was laid on maximizing the learning curve and working things out from the very basic principles. Various tests were performed for different subsystems of the car so as to enhance the final performance. Documentation of the whole design process was also done to make sure all the data was available for any future reference. Thus, a data driven design process focused on the basic principles of designing resulted in the building of an efficacious car. The grand ancestor of all #091!</p>
+        <p>We started our first season of Formula SAE with emphasis being laid on designing a car which is simple yet efficient. Drivability, reliability and cost effectiveness were the specific areas focused upon.Emphasis was laid on maximizing the learning curve and working things out from the very basic principles. Various tests were performed for different subsystems of the car so as to enhance the final performance. Documentation of the whole design process was also done to make sure all the data was available for any future reference. Thus, a data driven design process focused on the basic principles of designing resulted in the building of an efficacious car. The grand ancestor of all #091!</p>
         <a href="#0" class="cd-read-more"></a>
         <span class="cd-date">Jan '15</span>
       </div> <!-- cd-timeline-content -->
@@ -523,6 +514,7 @@ Emphasis was laid on maximizing the learning curve and working things out from t
 <section class="subs">
 <span class="subsheader">Vehicle Dynamics</span>
       <section class="slider">
+      <span onclick="$('a.flex-prev').trigger('click');">hello</span>
         <div class="flexslider carousel">
           <ul class="slides">
             <li onmouseenter="grow_img(this)" onmouseleave="shrink_img(this)">
@@ -655,7 +647,7 @@ Emphasis was laid on maximizing the learning curve and working things out from t
                                           <!--google maps-->
 <section class="footer">
   <div class="contacts">
-    <div id="map"></div>
+    <div id="map" onclick="enablescroll(this)"></div>
       <script>
         function initMap() {
           var uluru = {lat: 26.5112534, lng: 80.2306062};

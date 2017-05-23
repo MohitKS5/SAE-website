@@ -12,10 +12,18 @@ var shrink_img= function shrink_img(argument) {
     $slider.removeClass('sliderhover').addClass('slider');
     $(argument).children().addClass("shrunk");*/
 };
-
+var enablescroll=function enablescroll(arg){
+  $(arg).css({
+    "pointer-events" : "auto"
+  }); 
+}
 var chng_color=function chng_color(arg) {
   $(arg).addClass('red_clr');
 };
+var funL=function funL($this){$($this).parent().find('a.flex-prev').trigger('click');};
+var funR=function funR($this){$($this).parent().find('a.flex-next').trigger('click');};
+
+
     $(window).load(function(){
       $('.flexslider').flexslider({
         animation: "slide",
@@ -27,8 +35,13 @@ var chng_color=function chng_color(arg) {
           $('body').removeClass('loading');
         }
       });
-    $('a.flex-pause').hide();
-    $('ul.slides>li:nth-child(1)').css({"margin-left" : "0px"});
+  
+  $('a.flex-pause').hide();
+  
+  var navelement2="<span onclick='funL(this)' class='navarrow L'></span>",
+  navelement="<span onclick='funR(this)' class='navarrow R'></span>";
+  $('.slider').prepend(navelement).prepend(navelement2);
+  
 
 if($("li.indicator-item").first().hasClass('active')){
   $('li.indicator-item').addClass('glow_class');
