@@ -101,7 +101,7 @@
 
 <section class="tab-content" id="_home"></section>
 
-<section class="tab-content" id="_about">
+<section class="tab-content" id="_about" ng-app="sae" ng-controller="aboutDetails">
   <main class="cd-main-content" style="background:white;">
         <section id="cd-placeholder-0" class="cd-section cd-container">
           <h2>About Us</h2>
@@ -713,7 +713,11 @@
     
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
+      //bring to home on reload
   }
+  $(document).ready(function () {
+    $('body').css({'overflow' : 'hidden'});
+  });
 
 
 </script>
