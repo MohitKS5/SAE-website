@@ -21,11 +21,24 @@ html{
 body{
 	font-size: 10px;
 	 background-attachment: fixed;
-     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/sae_back.jpg');
   	background-position: center center, center center;
   	background-repeat: repeat, no-repeat;
 	background-size: cover;
 }
+._babout, ._bhome, ._bsponsors{
+	 background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('../images/sae_back.jpg');
+}
+._bmembers, ._balumni{
+	 background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url('../images/sae_back.jpg');
+}
+._bgallery{
+	 background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0,0.5)), url('../images/sae_back1.jpg');
+}
+.white{
+ background-image: :linear-gradient(rgba(255,255,255,1),rgba(255,255,255,1))!important;
+}
+
+
 .cd-main-content{
 	background:transparent!important;
 }
@@ -408,6 +421,11 @@ p{
 
 #_gallery{
 	margin: 10% 0 10% 0;
+	bdackground-image: url('../images/back1.jpg')!important;
+	background-size: cover!important;
+	background-attachment: fixed!important;
+	width: 100vw;
+	height: 100vh;
 }
 /*----------top images---------------*/
 #_homepagecarousel>img , ._coverimg{
