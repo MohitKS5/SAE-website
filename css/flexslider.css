@@ -26,7 +26,7 @@
   -webkit-backface-visibility: hidden;
   
 }
-
+/*--image props*/
 .flexslider .slides img {
   width: 200px;
   height: 200px!important;
@@ -35,12 +35,17 @@
 .slides img{
    border-radius: 100px;
 }
+
+
+/*- names  */
 .slides span{
   text-align: center;
   width: 200px;
   display: block;
   font-size: 2rem;
 }
+
+/*hidden necessary to trigger carousel manual scroll*/
 .flexslider .slides:after {
   content: "\0020";
   display: block;
@@ -100,6 +105,7 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav {
   *height: 0;
 }
+/*hidden side arrows to trigger scroll and bottom dots of scrollspy*/
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
@@ -166,6 +172,7 @@ a:hover{
   cursor: default;
   z-index: -1;
 }
+/*useless*/
 .flex-pauseplay a {
   display: block;
   width: 20px;

@@ -645,8 +645,8 @@
 </div>
                                           <!--google maps-->
 <section class="footer">
-  <div class="contacts">
-    <div id="map" onclick="enablescroll(this)"></div>
+  <div class="contacts"  onclick="enablescroll()">
+    <div id="map" class="clicked"></div>
       <script>
         function initMap() {
           var uluru = {lat: 26.5112534, lng: 80.2306062};
@@ -710,49 +710,10 @@
           .next().html("alumni")
           .next().html("gallery");
 
-    $("#tabs>a").click(function (event) {
-        var wind_height= $(window).height();
-        event.preventDefault();
-        var a=$(this).html();
-         $('li.indicator-item:contains('+a+')').trigger('click');
-      });
-
-    $("li.indicator-item").click(function (event) {
-        var wind_height= $(window).height();
-        var a=$(this).html();
-         $(".tab-content").hide();
-         var activeTab = $(this).html();
-         $("#_" + activeTab).fadeIn(700);
-         var SNTPosition =$('ul.indicators').offset().top;
-      if (a==='home') {$('li.indicator-item').addClass('glow_class'); }
-      else{  
-        $('li.indicator-item').removeClass('glow_class'); 
-        $('body').css({"overflow-y" : "scroll"});
-         if (($(window).scrollTop()>SNTPosition)) { 
-            $('html, body').stop().animate({
-            'scrollTop' : wind_height
-            },800);
-         }
-        else{
-          setTimeout(()=>{$('html, body').stop().animate({
-          'scrollTop' : wind_height
-          },800);},1000);}
-       }
-      });
-
-    $("#tabs>a").first().click(function (event) {
-       event.preventDefault();
-       window.scrollTo(0, 0);
-      $('body').css({"overflow" : "hidden"});
-    });
-
-    $("li.indicator-item").first().click(function () {
-       window.scrollTo(0, 0);
-      $('body').css({"overflow" : "hidden"});
-    });
+    
   window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
+    window.scrollTo(0, 0);
+  }
 
 
 </script>
