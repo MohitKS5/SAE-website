@@ -45,10 +45,9 @@ $(document).ready(function() {
 });
     
   $(window).load(function(){
-    move_to_top();
     $('.flexslider').flexslider({
         animation: "slide",
-        animationLoop: false,
+        animationLoop: true,
         itemWidth: 210,
         itemMargin: 5,
         pausePlay: true,
