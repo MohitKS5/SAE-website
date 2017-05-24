@@ -16,7 +16,7 @@
   <link rel="icon" href="logo.ico" type="image/x-icon" /><!-- Place favicon.ico in the root directory -                    <!above navbar-->
   <link rel="stylesheet" href="css/csshome/Font_Families.css">
   <link rel="stylesheet" href="css/csshome/sponsors.css">  
-  <link href="https://fonts.googleapis.com/css?family=Anton|Lily+Script+One|Luckiest+Guy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Boogaloo|Luckiest+Guy" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
   <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet"><!--font for top panels-->
 
@@ -34,7 +34,7 @@
 <body>
 
 <style type="text/css">
-  .full_size{height: 100vh!important;}
+  .full_size{height: 100vh!important;margin-bottom: 5%;}
 </style>
 
 <div class="_navbar">
@@ -255,7 +255,7 @@
 
 
                                           <!--tab-sponsors-->
-<section class="tab-content" id="_sponsors">
+  <section class="tab-content" id="_sponsors">
     <main class="cd-main-content" style="background:white;">
       <section id="cd-placeholder-0" class="cd-section cd-container">
         <h2>Our Proud Sponsors</h2>
@@ -355,7 +355,7 @@
 
                                           <!--tab-members-->
 <section class="main-content tab-content" id="_members">
-<h1 style="margin-left: 10%;">MEMBERS</h1><h4> PAGE</h4>
+<h1 style="margin-left: 10%;color: #555;">MEMBERS</h1><h4> PAGE</h4>
 <section class="subs">
       <span class="subsheader">Faculty</span>
       <section class="slider">
@@ -514,7 +514,6 @@
 <section class="subs">
 <span class="subsheader">Vehicle Dynamics</span>
       <section class="slider">
-      <span onclick="$('a.flex-prev').trigger('click');">hello</span>
         <div class="flexslider carousel">
           <ul class="slides">
             <li onmouseenter="grow_img(this)" onmouseleave="shrink_img(this)">
@@ -744,40 +743,17 @@
     $("#tabs>a").first().click(function (event) {
        event.preventDefault();
        window.scrollTo(0, 0);
-      $('body').css({"overflow-y" : "hidden"});
+      $('body').css({"overflow" : "hidden"});
     });
 
     $("li.indicator-item").first().click(function () {
        window.scrollTo(0, 0);
-      $('body').css({"overflow-y" : "hidden"});
+      $('body').css({"overflow" : "hidden"});
     });
-       $(document).ready(function(){
-      if($('li.indicator-item').first().hasClass('active')){
-        window.scrollTo(0, 0);
-        $('body').css({"overflow-y" : "hidden"});
-      }        
-    });
+  window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
-        $(document).ready(function() {
-  // will first fade out the loading animation 
-         $("#loader").delay(1000).fadeOut("slow", function(){
-
-        // will fade out the whole DIV that covers the website.
-        $("#_preloader").fadeOut("slow");
-      }); 
-       
-       
-       $("#_homepagecarousel>img:not(:nth-child(1))").hide();
-
-    setInterval(function() { 
-      $('#_homepagecarousel > img:first')
-        .fadeOut(1500)
-        .next()
-        .fadeIn(1500)
-        .end()
-        .appendTo('#_homepagecarousel');
-    },  3000);
-  });
 
 </script>
 </body>

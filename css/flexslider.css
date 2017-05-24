@@ -24,6 +24,7 @@
 }
 .flexslider .slides  li {
   -webkit-backface-visibility: hidden;
+  width: 210px!important;
 }
 
 

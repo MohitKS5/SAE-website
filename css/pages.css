@@ -15,7 +15,9 @@ body{
 
 #_members{
 	background-color: transparent !important;
-	transform: scale(1.2);
+	transform: scale(1.2) translateY(300px);
+	overflow-x: hidden!important;
+	padding-bottom: 200px;
 }
 /*-------------nav -------------------*/
 nav{
@@ -125,12 +127,16 @@ h1{
 h2{	font-size: 3rem !important;
 	color:#666;
 }
+h3{
+	font-size: 2.5rem!important;
+	color: #888!important;
+}
 
 
 .main-content{
 	display: block;
 	z-index:10 !important;
-	margin-top:20%;
+	margin-top:0%;
 	border:0px groove black;
 	padding: 5rem;
 	border:0px solid black;
@@ -260,6 +266,9 @@ iframe.members{
 	cursor: pointer;
 	pointer-events: none;
 }
+#map .clicked{
+	pointer-events: auto;
+}
 .about-us{
 	display: inline-block;
 	width: 30%;
@@ -291,7 +300,7 @@ iframe.members{
 p{
 	font-size: 2rem !important;
 	text-align: left;	
-	font-family: 'Lily Script One', cursive;	
+	font-family: 'Boogaloo', cursive;
 }
 /*preload
  * ------------------------------------------------------------------- */
@@ -456,8 +465,10 @@ p{
 float: left;
 transform: translateX(-150px);
 clip-path: polygon(100% 100%, 50% 50% ,100% 0%,60% 50%,100% 20%, 100% 80%,60% 50%,100% 100%);
+-webkit-clip-path: polygon(100% 100%, 50% 50% ,100% 0%,60% 50%,100% 20%, 100% 80%,60% 50%,100% 100%);
 }
 .R{
 	left :80%;
 	clip-path: polygon(0% 0%, 50% 50% ,0% 100%,40% 50%,0% 80%,0% 20%, 40% 50%,0% 0%);
+	-webkit-clip-path: polygon(0% 0%, 50% 50% ,0% 100%,40% 50%,0% 80%,0% 20%, 40% 50%,0% 0%);
 }
