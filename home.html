@@ -7,6 +7,13 @@
   <title>SAE IIT Kanpur</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+    <!--
+    if (screen.width <= 699) {
+    document.location = "mobile.html";
+    }
+    //-->
+  </script>
 
   <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css"><!--google template-->
   <link rel="stylesheet" type="text/css" href="css/pages.css"><!--my_page-->
@@ -17,18 +24,10 @@
   <link rel="stylesheet" href="css/csshome/Font_Families.css">
   <link rel="stylesheet" href="css/csshome/sponsors.css">  
   <link href="https://fonts.googleapis.com/css?family=Anton|Boogaloo|Luckiest+Guy" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
   <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet"><!--font for top panels-->
 
-  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script><!--jquery-->
-  <script src="js/jshome/vendor/modernizr-2.8.3.min.js"></script><!--template-->
-  <script type="text/javascript" src="js/pages.js"></script><!--my_page-->
-  <script defer src="js/jquery.flexslider.js"></script><!--slider-->
-  <script src="materialize/js/materialize.js"></script><!--google template-->
-  <script src="js/jshome/angular.min.js"></script>
-  <script src="js/jshome/angular-sanitize.js"></script><!--angular addition-->
-  <script src="js/jshome/sd.js"></script>
-  <script src="js/jshome/main.js"></script><!--timeline-->
+  
  
 </head>
 <body class="_babout">
@@ -611,11 +610,7 @@
     <a class="carousell-item" href="#five!"><img src=images/gallery/13.jpg></a>
     <a class="carousell-item" href="#five!"><img src=images/gallery/14.jpg></a>
   </div>
-<script type="text/javascript">
-  $(document).ready(function(){
-      $('.carousell').carousell();
-    });
-</script>
+
 </section>
                                           <!--footer-->
 <div class="logo2">
@@ -647,20 +642,7 @@
 <section class="footer">
   <div class="contacts"  onclick="enablescroll()">
     <div id="map" class="clicked"></div>
-      <script>
-        function initMap() {
-          var uluru = {lat: 26.5112534, lng: 80.2306062};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            center: uluru
-          });
-          var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-          });
-        }
-      </script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArDM-W1kwJA0gTGe9iJ-dui2o-RoPlxuA&callback=initMap"></script>
+
   <div class="about-us">
     <pre>
     Society of Automotive Engineers (SAE)
@@ -699,9 +681,37 @@
       <br>
       <div style="color: yellow; font-size:1.8rem; position: absolute; transform: translate(50px,80px); opacity: 0.5; ">worth waiting xD....</div>
     </div>
+
+    <!--scripts-->
   </div> 
-                                          <!--script-->
-<script type="text/javascript">
+  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script><!--jquery-->
+  <script src="js/jshome/vendor/modernizr-2.8.3.min.js"></script><!--template-->
+  <script type="text/javascript" src="js/pages.js"></script><!--my_page-->
+  <script defer src="js/jquery.flexslider.js"></script><!--slider-->
+  <script src="materialize/js/materialize.js"></script><!--google template-->
+  <script src="js/jshome/angular.min.js"></script>
+  <script src="js/jshome/angular-sanitize.js"></script><!--angular addition-->
+  <script src="js/jshome/sd.js"></script>
+  <script src="js/jshome/main.js"></script><!--timeline-->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousell').carousell();
+    });
+      
+        function initMap() {
+          var uluru = {lat: 26.5112534, lng: 80.2306062};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArDM-W1kwJA0gTGe9iJ-dui2o-RoPlxuA&callback=initMap"></script>                                         <!--script-->
+          <script type="text/javascript">
           $('.carousell.carousell-sliderr').carousell({fullWidth: true});
           $('li.indicator-item').first().html("home")
           .next().html("about")
