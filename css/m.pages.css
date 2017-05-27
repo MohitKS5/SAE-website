@@ -1,4 +1,7 @@
 
+html{
+	min-height: 100vh!important;
+}
 body{
 	font-family: 'Boogaloo', cursive;
 }
@@ -110,4 +113,26 @@ iframe{
 	width: 100%; 
 	min-height:90vmin;
 	border:none;
+}
+
+.imag{
+	background-image: url("../images/einstein.jpg");
+	display: block;
+	height: 40vw;
+	border-radius: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	float: right;
+}
+.alum:nth-child(odd)>div{
+	background-position:left;
+	float: left!important;
+}
+.alum{
+	display: block;
+	min-height: 45vw;
+	margin-bottom:5%;
+	font-size: 1rem;
+
 }
