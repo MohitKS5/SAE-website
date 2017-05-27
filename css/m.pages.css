@@ -1,0 +1,113 @@
+
+body{
+	font-family: 'Boogaloo', cursive;
+}
+.swipe_pages{
+	display: block;
+	overflow:scroll;
+	height: 100vh!important;
+}
+.carousel-item>section{
+	text-align: left;
+}
+p{
+	text-align:justify;
+}
+#table{
+	display: block;
+	overflow: scroll;
+}
+td{
+	font-size: 10px;
+	padding: 10px 0 0 0;
+}
+th{
+	white-space: nowrap;
+}
+.members_carousel{
+	height: 40%;
+}
+.about-us{
+	display: block;
+	background-color:white;
+	color: white;
+
+}
+h2{
+	color: #f00;
+	text-align: left;
+}
+h3,h4{
+	color: #f00;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 0.2px;
+	margin-left: 20px;
+	opacity: 0.8;
+}
+h4{
+	color: #333;
+}
+h4::before{
+	content: "♠ ";
+	font-size: 2rem;
+	color: black;
+}
+h4::after{
+	content: "swipe pics>>";
+	font-size: 0.6rem;
+	float: right;
+	animation:blinker 1s infinite;
+	color: black;
+}
+@keyframes blinker{
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+}
+#_members h4:nth-child(1){
+	 margin-top: 0px!important;
+}
+#_members>main>h4{
+	 margin-top: 30%;
+}
+#_bout{
+	background-color: #fff;
+}
+#_sponsors{
+	background-color: #fff;
+}
+#_members{
+	background-color: #fff;
+}
+#_gallery{
+	background-color: #fff;
+}
+.soc-linkd>i{
+	display: inline;
+}
+.soc-links{
+	font-weight: 500;
+	transform: translateY(-5px);
+	float: right;
+	right: 20%;
+	font-size: 1.5rem;
+	color:#333;
+	display: inline;
+}
+.soc-links>i:hover{
+	color: red;
+}
+.button-collapse>i{
+	font-size: 1.5rem;
+	color: black;
+}
+.navigator{
+	padding:10px;
+	background-color: #eee
+}
+iframe{
+	width: 100%; 
+	min-height:90vmin;
+	border:none;
+}
