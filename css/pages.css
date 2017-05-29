@@ -47,7 +47,7 @@ body{
 	background-color: transparent !important;
 	transform: scale(1.2) translateY(300px);
 	overflow-x: hidden!important;
-	padding-bottom: 200px;
+	padding-bottom: 20%;
 }
 /*-------------nav -------------------*/
 nav{
@@ -200,7 +200,7 @@ h3{
 }
 /*----------flex slider-----------------*/
 .slider{
-	width: 60%;
+	width: 850px;
 	margin-left: 20%;
 	display: block;
 
@@ -259,7 +259,7 @@ iframe.members{
 /*---------------------------------------------ALUMNI PAGE------------------------------------------*/
 .people{
 	width: 45%;
-	margin: 0.1%;
+	margin: 5% 0.1% 5% 2%;
 	display:inline-block;
 }
 .people>div:nth-child(1){
@@ -271,7 +271,7 @@ iframe.members{
 	background-color: #fff;
 	display: inline-block;
 	width: 49%;
-	transform: translateY(-10%);
+	transform: translateY(-5rem);
 	font-size: 2rem;
 }
 
@@ -285,7 +285,7 @@ iframe.members{
 	margin-left: 5%;
 }
 .photos{
-	background-color: #eee;
+	background-color: #fff;
 	display: block;
 	border-radius: 0% 0 0 0%;
 	margin: 10%;
@@ -293,7 +293,10 @@ iframe.members{
 
 /*---------------------------------------------FOOTER------------------------------------------*/
 .logo{
-	height: 100px;
+	height: 80px;
+	padding: 5px;
+	background-color: rgba(255,255,255,0.8);
+	transform: translateY(-2px);
 }
 .logo>img{
 	height:70px;
@@ -499,7 +502,7 @@ clip-path: polygon(100% 100%, 50% 50% ,100% 0%,60% 50%,100% 20%, 100% 80%,60% 50
 -webkit-clip-path: polygon(100% 100%, 50% 50% ,100% 0%,60% 50%,100% 20%, 100% 80%,60% 50%,100% 100%);
 }
 .R{
-	left :80%;
+	left :84%;
 	clip-path: polygon(0% 0%, 50% 50% ,0% 100%,40% 50%,0% 80%,0% 20%, 40% 50%,0% 0%);
 	-webkit-clip-path: polygon(0% 0%, 50% 50% ,0% 100%,40% 50%,0% 80%,0% 20%, 40% 50%,0% 0%);
 }
