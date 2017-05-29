@@ -42,7 +42,7 @@ var funR=function funR($this){$($this).parent().find('a.flex-next').trigger('cli
 $(document).ready(function() {
   //preloader
   $(document).scrollTop(0);
-  $("#loader").delay(3000).fadeOut("slow", function(){// will first fade out the loading animation
+  $("#loader").delay(10000).fadeOut("slow", function(){// will first fade out the loading animation
   $("#_preloader").fadeOut("slow");// will fade out the whole DIV that covers the website.
   }); 
   
