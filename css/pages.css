@@ -45,10 +45,25 @@ body{
 
 #_members{
 	background-color: transparent !important;
-	transform: scale(1.2) translateY(300px);
 	overflow-x: hidden!important;
 	padding-bottom: 20%;
 }
+@media screen and (max-width: 1200px){
+	#_members{
+		transform: scale(1) translateY(250px);
+	}
+}
+@media screen and (max-width: 1600px){
+	#_members{
+		transform: scale(1.1) translateY(200px);
+	}
+}
+@media screen and (max-width: 2000px) {
+	#_members{
+  		transform: scale(1.2) translateY(300px);
+	}
+}
+
 /*-------------nav -------------------*/
 nav{
 	margin-top: 50%;
