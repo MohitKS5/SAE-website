@@ -81,9 +81,12 @@ nav{
 	font-size: 2rem;
 	color:#333;
 	display: none;
-	transform: translate(-40%,-120%);
+	transform: translate(-40%,-150%);
 }
-.soc-links>i:hover{
+.soc-links a i{
+	color: #333;
+}
+.soc-links>a>i:hover{
 	color: red;
 }
 
