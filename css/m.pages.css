@@ -304,9 +304,12 @@ div.alum:nth-child(50)>div.imag{
 	display: block;
 	padding:5%;
 }
-.sponsors_logos>img{
+.sponsors_logos>div{
+	display: block;
 	width: 45%;
 }
 .ful{
+	display: block;
 	width: 90%;
 }
+.sponsors_logos>div:nth-child(1){background-image: url('');}
