@@ -4,15 +4,21 @@
 	$('li.indicator-item:nth-child('+b+')').trigger('click');
 });*/
 
-$('body').on('click',function () {
+$('#_homepre').on('click',function () {
 		$('#_homepre').fadeOut(1000);
 });
 
 
 $(document).ready(function () {
+    //preloader
+  $(document).scrollTop(0);
+  $("#loader").delay(2000).fadeOut("slow", function(){// will first fade out the loading animation
+  $("#loader-wrapper").fadeOut("slow");// will fade out the whole DIV that covers the website.
+  //hide tabs except the first one
 	$('.carouseld-item').not(':nth-child(1)').hide();
 	// body...
 })
+});
 //carousel bottom navbar navigatio controls
     $("a.waves-effect").click(function (event) {
 

@@ -39,7 +39,12 @@ th{
 	color: white;
 	margin-top:0;
 	padding: 5%;
+	position: absolute;
 	font-size: 0.8rem;
+	width: 100%;
+	bottom:7%;
+
+
 
 }
 h2{
@@ -309,7 +314,7 @@ div.alum:nth-child(50)>div.imag{
 	 height: 100vh; 
 	 background-image:url('../images/m.home-back.jpg');
 	 background-size: cover;background-color: black;
-	  z-index: 10000;
+	  z-index: 100;
 	  font-family: 'Audiowide', cursive;
 	  font-size: 3.5rem;
 	  padding-top: 30%;
@@ -318,4 +323,9 @@ div.alum:nth-child(50)>div.imag{
 }
 #lo_go{
 	width: 60%;
+	padding-top: 30%;
+}
+
+div.userView{
+	height: 30vh!important;
 }
