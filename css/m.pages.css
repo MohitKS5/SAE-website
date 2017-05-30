@@ -329,3 +329,8 @@ div.alum:nth-child(50)>div.imag{
 div.userView{
 	height: 30vh!important;
 }
+#__sponsor{
+	width: 100%;
+
+	height: 60vh;
+}
