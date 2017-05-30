@@ -64,9 +64,9 @@
     </div>  
 </div>
 <div class="divider"></div>
-	<!--carousel-->
-	<div class="carousel carousel-slider center" data-indicators="true" id="main_car">
-    <div class="carousel-item swipe_pages" id="_about">
+	<!--carouseld-->
+	<div class="carouseld carouseld-slider center" data-indicators="true" id="main_car">
+    <div class="carouseld-item swipe_pages" id="_about">
       <main class="container">
       	<section class="section">
          	<h2>About Us</h2>
@@ -87,21 +87,21 @@
           <p>Teams taking part in Formula SAE are judged in a series of static and dynamic events. Static events include things like business presentation engineering design and cost and sustainability.The teams who pass the static events are then allowed to participate in the dynamic events where they are scored based on how well their vehicle performs in various tasks. Therefore, Formula SAE encompasses all aspects of a business including research, design, manufacturing, testing, developing, marketing, management, and fund raising.</p>
           <p style="margin-top:10px;">Full description of the static events is following,</p>
           <!--div class="insert-media">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner" role="listbox">
+            <div id="carouseld-example-generic" class="carouseld slide" data-ride="carouseld">
+              <div class="carouseld-inner" role="listbox">
                 <div class="item" ng-repeat="i in arr.about_event.static" ng-class="{active: $index==0}">
                   <img ng-src="img/About/{{i.image_src}}">
-                  <div class="carousel-caption">
+                  <div class="carouseld-caption">
                     <h2>{{i.name}} ({{i.points}} Points)</h2>
                     <p>{{i.des}}</p>
                   </div>
                 </div>
               </div>
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <a class="left carouseld-control" href="#carouseld-example-generic" role="button" data-slide="prev">
                 <span class="font-icon font-icon-arrow-left2" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <a class="right carouseld-control" href="#carouseld-example-generic" role="button" data-slide="next">
                 <span class="font-icon font-icon-arrow-right2" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -109,21 +109,21 @@
           </div>
           <p style="margin-top:10px;">Full description of the dynamic events is following,</p>
           <div class="insert-media">
-            <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner" role="listbox">
+            <div id="carouseld-example-generic2" class="carouseld slide" data-ride="carouseld">
+              <div class="carouseld-inner" role="listbox">
                 <div class="item" ng-repeat="i in arr.about_event.dynamic" ng-class="{active: $index==0}">
                   <img ng-src="img/About/{{i.image_src}}">
-                  <div class="carousel-caption">
+                  <div class="carouseld-caption">
                     <h2>{{i.name}} ({{i.points}} Points)</h2>
                     <p>{{i.des}}</p>
                   </div>
                 </div>
               </div>
-              <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+              <a class="left carouseld-control" href="#carouseld-example-generic2" role="button" data-slide="prev">
                 <span class="font-icon font-icon-arrow-left2" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+              <a class="right carouseld-control" href="#carouseld-example-generic2" role="button" data-slide="next">
                 <span class="font-icon font-icon-arrow-right2" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -161,7 +161,7 @@
        </main>
       
     </div>
-    <div class="carousel-item swipe_pages" id="_sponsors" href="#sponsors">
+    <div class="carouseld-item swipe_pages" id="_sponsors" href="#sponsors">
      <main class="container">
      <section id="cd-placeholder-1" class="section">
         <h2>About Our Sponsors</h2>
@@ -248,7 +248,7 @@
 
      </main>
     </div>
-    <div class="carousel-item swipe_pages" id="_members">
+    <div class="carouseld-item swipe_pages" id="_members">
 	     <main class="container">
 	      <h2>Members Page</h2>
 	      <h4>aerodynamics</h4>
@@ -267,7 +267,7 @@
         <iframe src="members/web.html" scrolling="no"></iframe>
 	     </main>
     </div>
-   <div class="carousel-item swipe_pages" id="_alumni">
+   <div class="carouseld-item swipe_pages" id="_alumni">
      <main class="container">
     	<h2>Alumni page</h2>
           <div class="alum row">
@@ -618,7 +618,7 @@
           
       </main>
   </div>
-    <div class="carousel-item" href="_gallery" id="_gallery">
+    <div class="carouseld-item" href="_gallery" id="_gallery">
     <main class="container"> 
       <h2>Gallery</h2>
       <iframe src="pages/gallery.html" ></iframe>
@@ -637,7 +637,7 @@
    <script src="css/mats/js/materialize.js"></script><!--google template-->
    <script src="js/m.pages.js"></script>
    <script type="text/javascript">
-   $('.carousel.carousel-slider').carousel({fullWidth: true});
+  // $('.carouseld.carouseld-slider').carouseld({fullWidth: true});
     // Initialize collapse button
   $(".button-collapse").sideNav();
     $('.button-collapse').sideNav({
