@@ -32,8 +32,11 @@ th{
 }
 .about-us{
 	display: block;
-	background-color:white;
+	background-color:#333;
 	color: white;
+	margin-top:0;
+	padding: 5%;
+	font-size: 0.8rem;
 
 }
 h2{
@@ -86,8 +89,12 @@ h4::after{
 #_gallery{
 	background-color: #fff;
 }
-.soc-linkd>i{
+.soc-linkd>a>i{
 	display: inline;
+	color: #333!important;
+}
+.soc-links>a>i{
+	color: #333;
 }
 .soc-links{
 	font-weight: 500;
@@ -98,7 +105,7 @@ h4::after{
 	color:#333;
 	display: inline;
 }
-.soc-links>i:hover{
+.soc-links>a>i:hover{
 	color: red;
 }
 .button-collapse>i{
@@ -288,6 +295,18 @@ div.alum:nth-child(49)>div.imag{
 div.alum:nth-child(50)>div.imag{
 	background-image: url("../images/alumni/vikash.jpg");
 }
-
-
-
+._circle{
+	height: 35px;
+	margin-top: 100px;
+}
+.sponsors_logos{
+	width: 90%;
+	display: block;
+	padding:5%;
+}
+.sponsors_logos>img{
+	width: 45%;
+}
+.ful{
+	width: 90%;
+}
