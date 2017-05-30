@@ -8,7 +8,7 @@ body{
 .swipe_pages{
 	display: block;
 	overflow:scroll;
-	height: 100vh!important;
+	height: 90vh!important;
 }
 .carousel-item>section{
 	text-align: left;
