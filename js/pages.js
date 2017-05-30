@@ -43,7 +43,7 @@ $(document).ready(function() {
   //preloader
   $(document).scrollTop(0);
   $("#loader").delay(3000).fadeOut("slow", function(){// will first fade out the loading animation
-  $("#_preloader").fadeOut("slow");// will fade out the whole DIV that covers the website.
+  $("#loader-wrapper").fadeOut("slow");// will fade out the whole DIV that covers the website.
   }); 
   
   //carousel home tab     
