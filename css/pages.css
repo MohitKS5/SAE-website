@@ -346,9 +346,11 @@ iframe.members{
 }
 /*----------------about-------------------*/
 p{
-	font-size: 2rem !important;
+	font-size: 1.5rem !important;
 	text-align: left;	
-	font-family: 'Boogaloo', cursive;
+	font-family: 'Roboto', sans-serif;
+	opacity: 0.8;
+	letter-spacing: 1px;
 }
 /*----------------------------------------------------- preload ---------------- */
 #_preloader {
