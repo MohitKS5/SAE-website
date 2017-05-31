@@ -17,7 +17,8 @@ $(document).ready(function () {
   //hide tabs except the first one
 	$('.carouseld-item').not(':nth-child(1)').hide();
 	// body...
-})
+  });
+$.mobile.orientationChangeEnabled = false;
 });
 //carousel bottom navbar navigatio controls
     $("a.waves-effect").click(function (event) {
@@ -34,3 +35,9 @@ $(document).ready(function () {
               'scrollTop' : SNT
             },800);
         });
+
+
+
+$( window ).on( "orientationchange", function( event ) {
+   // if(event.orientation === "landscape")
+});

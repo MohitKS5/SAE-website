@@ -33,20 +33,27 @@ th{
 .members_carousel{
 	height: 40%;
 }
+
 .about-us{
 	display: block;
 	background-color:#333;
 	color: white;
 	margin-top:0;
 	padding: 5%;
-	position: absolute;
+	position:relative;
 	font-size: 0.8rem;
 	width: 100%;
+}
+@media screen and (min-height:500px){
+	
+	.about-us{
+	padding: 5%;
+	position: absolute;
 	bottom:7%;
-
-
+}
 
 }
+
 h2{
 	color: #f00;
 	text-align: left;
