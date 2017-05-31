@@ -21,7 +21,7 @@ $(document).ready(function () {
 $.mobile.orientationChangeEnabled = false;
 });
 //carousel bottom navbar navigatio controls
-    $("a.waves-effect").click(function (event) {
+    $("a.waves-effect").not('#NO').click(function (event) {
 
         $(".carouseld-item").hide();
         var activeTab = $(this).text();
