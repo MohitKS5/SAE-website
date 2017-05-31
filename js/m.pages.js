@@ -12,7 +12,7 @@ $('#_homepre').on('click',function () {
 $(document).ready(function () {
     //preloader
   $(document).scrollTop(0);
-  $("#loader").delay(2000).fadeOut("slow", function(){// will first fade out the loading animation
+  $("#loader").delay(1500).fadeOut("slow", function(){// will first fade out the loading animation
   $("#loader-wrapper").fadeOut("slow");// will fade out the whole DIV that covers the website.
   //hide tabs except the first one
 	$('.carouseld-item').not(':nth-child(1)').hide();
