@@ -303,7 +303,7 @@ div.alum:nth-child(47)>div.imag{
 	background-image: url("../images/alumni/shyamal_rao.jpg");
 }
 div.alum:nth-child(48)>div.imag{
-	background-image: url("../images/alumni/sudhanshu_ranjan.jpg");
+	f-image: url("../images/alumni/sudhanshu_ranjan.jpg");
 }
 div.alum:nth-child(49)>div.imag{
 	background-image: url("../images/alumni/vibhor.jpg");
@@ -336,6 +336,7 @@ div.alum:nth-child(50)>div.imag{
 
 div.userView{
 	height: 30vh!important;
+	
 }
 #__sponsor{
 	width: 100%;
