@@ -46,7 +46,7 @@ body{
 #_members{
 	background-color: transparent !important;
 	overflow-x: hidden!important;
-	padding-bottom: 20%;
+	padding-bottom: 40%;
 }
 @media screen and (max-width: 1200px){
 	#_members{
