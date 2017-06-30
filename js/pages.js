@@ -42,7 +42,7 @@ var funR=function funR($this){$($this).parent().find('a.flex-next').trigger('cli
 $(document).ready(function() {
   //preloader
   $(document).scrollTop(0);
-  $("#loader").delay(100).fadeOut(100, function(){// will first fade out the loading animation
+  $("#loader").delay(1500).fadeOut(100, function(){// will first fade out the loading animation
   $("#loader-wrapper").fadeOut(100);// will fade out the whole DIV that covers the website.
   });
 
@@ -150,7 +150,7 @@ $("#tabs>a").click(function (event) {
             },800);
           }else{
 
-            setTimeout(()=>{
+            setTimeout(function(){
               $('html, body').stop().animate({
                 'scrollTop' : wind_height
               },800);
