@@ -1241,8 +1241,8 @@
     <!--scripts-->
   </div> 
   <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script><!--jquery-->
-  <script src="js/jshome/vendor/modernizr-2.8.3.min.js"></script><!--template-->
   <script type="text/javascript" src="js/pages.js"></script><!--my_page-->
+  <script src="js/jshome/vendor/modernizr-2.8.3.min.js"></script><!--template-->
   <script defer src="js/jquery.flexslider.js"></script><!--slider-->
   <script src="materialize/js/materialize.js"></script><!--google template-->
   <script src="js/jshome/angular.min.js"></script>
@@ -1279,11 +1279,10 @@
     
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-      //bring to home on reload
+      //bring to home on reload$
+      $(".tab-content").hide();
   }
-  $(document).ready(function () {
-    $('body').css({'overflow' : 'hidden'});
-  });
+
 
 
 </script>
