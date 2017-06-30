@@ -26,10 +26,10 @@ body{
 	background-size: cover;
 }
 ._babout, ._bhome, ._bsponsors{
-	 background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('../images/sae_back.jpg');
+	 background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('http://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/sae_back.jpg');
 }
 ._bmembers, ._balumni{
-	 background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url('../images/sae_back.jpg');
+	 background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url('http://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/sae_back.jpg');
 }
 ._bgallery{
 	 background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,0));
@@ -211,7 +211,7 @@ h3{
 		}
 }
 .footer{
-	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../images/Contact-Us.jpg');
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('http://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/Contact-Us.jpg');
 	background-size: cover;
 	display: block;
 	padding: 2%;
@@ -363,7 +363,7 @@ p{
 	width: 100vw!important;
 	z-index: 800;
 	background-color: #eee!important;
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.6)), url('../images/preloader_back.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.6)), url('http://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/preloader_back.jpg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
