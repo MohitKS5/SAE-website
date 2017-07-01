@@ -44,7 +44,7 @@ $(document).ready(function () {
     //images load
     //preloader
     $(document).scrollTop(0);
-    $("#loader").delay(3500).fadeOut(1000, function () {// will first fade out the loading animation
+    $("#loader").delay(1500).fadeOut(1000, function () {// will first fade out the loading animation
         $("#loader-wrapper").fadeOut(1000);// will fade out the whole DIV that covers the website.
     });
 
