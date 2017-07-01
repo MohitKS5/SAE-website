@@ -78,35 +78,35 @@
         </div>
     </div>
     <div class="carousell-item amber white-text" href="#two!">
-        <div id="_aboutpage">
-            <img src="blank.gif" lsrc="https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/about.jpg"
+        <div>
+            <img src="blank.jpg" lsrc="https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/about.jpg"
                  class="_coverimg"/>
         </div>
         <span class="center_screen">About</span>
     </div>
     <div class="carousell-item green white-text" href="#three!">
-        <div><img src="blank.gif"
+        <div><img src="blank.jpg"
                   lsrc="https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/sponsors.jpg"
                   class="_coverimg"></div>
         <span class="center_screen">sponsors</span>
     </div>
     <div class="carousell-item blue white-text" href="#four!">
         <div>
-            <img src="blank.gif" lsrc="https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/members.jpg"
+            <img src="blank.jpg" lsrc="https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/members.jpg"
                  class="_coverimg">
         </div>
         <span class="center_screen">members</span>
     </div>
     <div class="carousell-item yellow white-text" href="#four!">
         <div id="_aboutpage">
-            <img src="blank.gif" lsrc="https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni.jpg"
+            <img src="blank.jpg" lsrc="https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/alumni.jpg"
                  class="_coverimg">
         </div>
         <span class="center_screen">Alumni</span>
     </div>
     <div class="carousell-item black white-text" href="#four!">
         <div id="_aboutpage">
-            <img src="blank.gif"
+            <img src="blank.jpg"
                  lsrc="https://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/home/image2.jpg"
                  class="_coverimg">
         </div>
@@ -1617,9 +1617,9 @@
         window.scrollTo(0, 0);
         //bring to home on reload$
     }
-
-
+    $('.logo>img').each(function(){$(this).attr('src', $(this).attr('lsrc'))});
 </script>
+
 <script src="imageload.js" defer async></script>
 </body>
 </html>

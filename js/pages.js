@@ -45,8 +45,8 @@ $(document).ready(function () {
     $('body').css({"overflow": "hidden"});
     //preloader
     $(document).scrollTop(0);
-    $("#loader").delay(1500).fadeOut(1000, function () {// will first fade out the loading animation
-        $("#loader-wrapper").fadeOut(1000);// will fade out the whole DIV that covers the website.
+    $("#loader").delay(3000).fadeOut(1000, function () {// will first fade out the loading animation
+        $("#loader-wrapper").fadeOut(500);// will fade out the whole DIV that covers the website.
     });
 
     //carousel home tab
