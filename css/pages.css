@@ -152,7 +152,7 @@ nav {
 
 /*--------main content-----------*/
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Convergence' , sans-serif !important;
+    font-family: 'Convergence', sans-serif !important;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -203,7 +203,7 @@ h3 {
     display: block;
     border: 0px solid black;
     margin-left: 17%;
-    font-family: 'Convergence' , sans-serif;
+    font-family: 'Convergence', sans-serif;
     font-size: 4rem;
     background: -webkit-linear-gradient(#e00, #000);
     -webkit-background-clip: text;
