@@ -173,6 +173,7 @@ $(window).load(function () {
         window.scrollTo(0, 0);
         $('body').css({"overflow": "hidden"});
     });
+    $('a.flex-prev , a.flex-next').html(" ");
 
 
 });
