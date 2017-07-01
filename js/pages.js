@@ -41,7 +41,8 @@ var funR = function funR($this) {
 };
 
 $(document).ready(function () {
-    //images load
+    //scroll disable
+    $('body').css({"overflow": "hidden"});
     //preloader
     $(document).scrollTop(0);
     $("#loader").delay(1500).fadeOut(1000, function () {// will first fade out the loading animation
