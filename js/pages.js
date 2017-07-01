@@ -41,10 +41,13 @@ var funR = function funR($this) {
 };
 
 $(document).ready(function () {
+    //images load
+    
+
     //preloader
     $(document).scrollTop(0);
-    $("#loader").delay(4000).fadeOut(100, function () {// will first fade out the loading animation
-        $("#loader-wrapper").fadeOut(100);// will fade out the whole DIV that covers the website.
+    $("#loader").delay(3500).fadeOut(1000, function () {// will first fade out the loading animation
+        $("#loader-wrapper").fadeOut(1000);// will fade out the whole DIV that covers the website.
     });
 
     //carousel home tab

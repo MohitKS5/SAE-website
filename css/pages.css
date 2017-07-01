@@ -30,18 +30,6 @@ body {
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('http://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/sae_back.jpg');
 }
 
-._bmembers, ._balumni {
-    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url('http://res.cloudinary.com/imagelibraryfsae/image/upload/v1498843998/sae_back.jpg');
-}
-
-._bgallery {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
-
-.white {
-    background-image:: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)) !important;
-}
-
 .cd-main-content {
     background: transparent !important;
 }
@@ -481,7 +469,7 @@ p {
     top: 50%;
     font-size: 100px;
     transform: translate(-50%, -50%);
-    color: rgba(255, 255, 255, 255, .7);
+    color: rgba(255, 255, 255,0.7);
     font-weight: 600;
     position: absolute;
     font-family: 'Ruslan Display', cursive;
