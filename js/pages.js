@@ -20,11 +20,6 @@ var shrink_img = function shrink_img(argument) {
         opacity: '0'
     }, 1);
 };
-
-var move_to_top = function move_to_top() {
-    $('li.indicator-item').first().trigger('click');
-};
-
 var enablescroll = function enablescroll() {
     $('#map').removeClass('clicked');
 };
@@ -81,11 +76,12 @@ $(window).load(function () {
     $('.slider').prepend(navelement).prepend(navelement2);
 
     //blinking on home page
-    if ($("li.indicator-item").first().hasClass('active')) {
-        $('li.indicator-item').addClass('glow_class');
+    var $indicator=$('li.indicator-item');
+    if ($($indicator).first().hasClass('active')) {
+        $($indicator).addClass('glow_class');
     }
     else {
-        $('li.indicator-item').removeClass('glow_class');
+        $($indicator).removeClass('glow_class');
     }
 //bring navbar when window crosses the 1st screen
     var secondaryNavTopPosition = $('ul.indicators').offset().top;
@@ -131,7 +127,7 @@ $(window).load(function () {
         $('li.indicator-item:contains(' + a + ')').trigger('click');
     });
 //carousel bottom navbar navigatio controls
-    $("li.indicator-item").click(function (event) {
+    $($indicator).click(function (event) {
         var wind_height = $(window).height();
         var a = $(this).html();
         $(".tab-content").hide();
@@ -142,10 +138,10 @@ $(window).load(function () {
         //changing absolute body backgrounds
         $('body').attr('class', '_b' + a);
         if (a === 'home') {
-            $('li.indicator-item').addClass('glow_class');
+            $($indicator).addClass('glow_class');
         }
         else {
-            $('li.indicator-item').removeClass('glow_class');
+            $($indicator).removeClass('glow_class');
             $('body').css({"overflow-y": "scroll"});
             if (($(window).scrollTop() > SNTPosition)) {
                 $('html, body').stop().animate({
@@ -161,19 +157,21 @@ $(window).load(function () {
                 }, 1000);
             }
         }
+    }).first().click(function () {
+        window.scrollTo(0, 0);
+        $('body').css({"overflow": "hidden"});
     });
-//home tab restrinct scroll
+
+    //clear previous and after arrows
+    $('a.flex-prev , a.flex-next').html(" ");
+
+    //home tab restrinct scroll
     $("#tabs>a").first().click(function (event) {
         event.preventDefault();
         window.scrollTo(0, 0);
         $('body').css({"overflow": "hidden"});
     });
 
-    $("li.indicator-item").first().click(function () {
-        window.scrollTo(0, 0);
-        $('body').css({"overflow": "hidden"});
-    });
-    $('a.flex-prev , a.flex-next').html(" ");
 
 
 });
